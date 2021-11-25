@@ -1,10 +1,12 @@
-import { Header } from "../components/Header/Header"
-
+import { Header } from "../components/Header/Header";
+import { Footer } from "../components/Footer/Footer";
+ 
 export const BookingPage = () => {
     return(
         <div>
             <Header viewing={"Main"}/>
-            <p>booking</p>    
+            <p>booking</p>
+            <Footer/>
         </div>
     )
 }

@@ -1,4 +1,5 @@
-import { Header } from "../components/Header/Header"
+import { Header } from "../components/Header/Header";
+import { Footer } from "../components/Footer/Footer";
 
 export const PricesPage = () => {
     return(
@@ -102,6 +103,7 @@ export const PricesPage = () => {
                         (which is not the mentioned citys) the reconciliation process about the price should be in person or phone!
                     </p>
                 </div>
+<Footer/>
         </div>
     )
 }

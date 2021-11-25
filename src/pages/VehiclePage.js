@@ -1,3 +1,9 @@
+import { Footer } from "../components/Footer/Footer"
+
 export const VehiclePage = () => {
-    return("<p>tVehiclePage</p>")
+    return(
+        <div>
+            <Footer/>
+        </div>
+    )
 }
