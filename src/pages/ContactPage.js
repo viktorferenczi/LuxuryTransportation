@@ -1,3 +1,10 @@
+import { Header } from "../components/Header/Header"
+
 export const ContactPage = () => {
-    return("<p>ContactPage</p>")
+    return(
+        <div>
+            <Header viewing={"Main"}/>
+            <p>contact</p>    
+        </div>
+    )
 }
