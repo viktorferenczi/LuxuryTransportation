@@ -40,10 +40,12 @@
 .header {
     background-color: #141414;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .logo-image {
-
+    width: 8rem
 }
 
 .header-h3 {
@@ -69,10 +71,9 @@
 }
 
 .social-div {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem
+    
+    display: contents;
+  
 }
 
 .main-menu {
@@ -93,9 +94,35 @@
 }
 
 .phone-number-contact {
-    margin-left : 5rem;
+    margin-left : 3rem;
     align-self :center
 }
+
+.founder-info {
+    margin-top: 10rem;
+}
+
+.email {
+    color:white;
+    display: contents
+}
+
+.email-icon {
+    color: #b1955a;
+    padding-left: 1rem
+}
+
+.phone-icon {
+    padding-right: 1rem;
+    font-size: 1.5rem
+}
+
+.icon {
+    color: #b1955a;
+    padding-right: 1rem;
+    font-size: 1.5rem
+}
+
 
 @media only screen and (max-width: 823px) {
     body {

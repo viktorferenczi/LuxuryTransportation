@@ -1,8 +1,8 @@
 import '../../App.css';
 
 export const FounderInfo = () => {
-    return(
-        <div>
+    return (
+        <div className= "founder-info" >
            <h1>Welcome</h1>
            <h4>Welcome to our page, I am Zsolt Molnar, the founder of
 MIAMI TRANSPORTATION.</h4>
