@@ -38,18 +38,12 @@
 }
 
 .header {
-    background-color: black;
+    background-color: #141414;
     width: 100%;
-    height: 15rem; 
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between
 }
 
 .logo-image {
 
-    width: 25rem;
-    margin-left: 2rem
 }
 
 .header-h3 {
@@ -64,7 +58,14 @@
 }
 
 .contact {
-    color: white
+    color: white;
+    background-color: #b1955a;
+    width: 10rem;
+    height: 3rem;
+    margin-right: 3rem;
+    border-radius: 4rem;
+    line-height: 3rem;
+    font-weight: 700;
 }
 
 .social-div {
@@ -75,11 +76,9 @@
 }
 
 .main-menu {
-    background-color: rgba(52, 52, 52, 0.4);
-    flex-direction: row;
     display: flex;
-    width: 100%;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 
 .first-menu-item {
@@ -89,8 +88,13 @@
 
 .main-menu-item {
     color: white;
-    margin-left: 8rem;
+    margin-left: 4rem;
     font-size: larger
+}
+
+.phone-number-contact {
+    margin-left : 5rem;
+    align-self :center
 }
 
 @media only screen and (max-width: 823px) {
