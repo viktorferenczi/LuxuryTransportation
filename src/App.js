@@ -15,6 +15,7 @@ import { EventsPage } from './pages/EventsPage';
 import { MainLandingPage } from './pages/MainLandingPage';
 import { PricesPage } from './pages/PricesPage';
 import { VehiclePage } from './pages/VehiclePage';
+import { BookingPage } from './pages/BookingPage';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/prices" element={<PricesPage/>}/>
           <Route path="/vehicle/?car=" element={<VehiclePage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
+          <Route path="/booking" element={<BookingPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
