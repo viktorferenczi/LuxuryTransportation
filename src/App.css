@@ -38,18 +38,14 @@
 }
 
 .header {
-    background-color: black;
+    background-color: #141414;
     width: 100%;
-    height: 15rem; 
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between
+    position: fixed;
+    top: 0;
 }
 
 .logo-image {
-
-    width: 25rem;
-    margin-left: 2rem
+    width: 8rem
 }
 
 .header-h3 {
@@ -64,22 +60,26 @@
 }
 
 .contact {
-    color: white
+    color: white;
+    background-color: #b1955a;
+    width: 10rem;
+    height: 3rem;
+    margin-right: 3rem;
+    border-radius: 4rem;
+    line-height: 3rem;
+    font-weight: 700;
 }
 
 .social-div {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem
+    
+    display: contents;
+  
 }
 
 .main-menu {
-    background-color: rgba(52, 52, 52, 0.4);
-    flex-direction: row;
     display: flex;
-    width: 100%;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 
 .first-menu-item {
@@ -89,9 +89,40 @@
 
 .main-menu-item {
     color: white;
-    margin-left: 8rem;
+    margin-left: 4rem;
     font-size: larger
 }
+
+.phone-number-contact {
+    margin-left : 3rem;
+    align-self :center
+}
+
+.founder-info {
+    margin-top: 10rem;
+}
+
+.email {
+    color:white;
+    display: contents
+}
+
+.email-icon {
+    color: #b1955a;
+    padding-left: 1rem
+}
+
+.phone-icon {
+    padding-right: 1rem;
+    font-size: 1.5rem
+}
+
+.icon {
+    color: #b1955a;
+    padding-right: 1rem;
+    font-size: 1.5rem
+}
+
 
 @media only screen and (max-width: 823px) {
     body {
