@@ -1,8 +1,22 @@
+import React, { useState } from 'react';
+
 import{ init } from 'emailjs-com';
 import emailjs from 'emailjs-com';
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button'
+
 init("user_NI2YtL4qPeOue4aib0abR");
 
 export const EmailSender = () => {
+
+    // Alert
+    const [show,setShow] = useState(false);
+
+    // Inputs
+    const [name,setName] = useState("");
+    const [email,setEmail] = useState("");
+    const [phone,setPhone] = useState("");
+    const [message,setMessage] = useState("");
 
     // we need to extract this data from here to somewhere safe and refact this code but its too late night for that sh*t
 
@@ -10,6 +24,27 @@ export const EmailSender = () => {
     //Access Token de1d93e023ead83a86aef750ee23d4d7
     //Template ID template_u2b0o8d
     //Service ID service_nxyq4yu
+
+    const handleChange = (e,input) => {
+        switch (input) {
+            case "name":
+                setName(e.target.value);
+                break;
+            case "email":
+                setEmail(e.target.value);
+                break;
+
+            case "phone":
+                setPhone(e.target.value);
+                break;
+
+            case "message":
+                setMessage(e.target.value);
+                break;
+            default:
+                break;
+        }
+    }
 
     const handleSubmit = (e) => {
         
@@ -24,28 +59,39 @@ export const EmailSender = () => {
         
         emailjs.send('service_nxyq4yu','template_u2b0o8d', templateParams, 'user_NI2YtL4qPeOue4aib0abR')
             .then((response) => {
-               console.log('SUCCESS!', response.status, response.text);
+               setShow(true);
             }, (err) => {
-               console.log('FAILED...', err);
+                alert('We were unable to send your message! Please call us!');
             });
     };
 
     return(
         <div>
-            <form onSubmit={handleSubmit}>
-                <p>Full Name*</p>
-                <input required type="text" name="name"/>
+            <Alert show={show} variant="success">
+                <Alert.Heading>Email Sent</Alert.Heading>
+                <p>Thank you for your letter. We will contact you as soon as possible.</p>
+                <hr />
+                <div className="d-flex justify-content-end">
+                    <Button onClick={() => setShow(false)} variant="outline-success">
+                        OK
+                    </Button>
+                </div>
+            </Alert>
+           
+            <form onSubmit={handleSubmit} style={{flexDirection:'column',display:'flex'}}>
+                <label htmlFor={"name"}>Full Name*</label>
+                <input onChange={ (e) => handleChange(e,"name")} required type="text" id="name" name="name" value={name} placeholder={"Your name"}/>
 
-                <p>Email*</p>
-                <input required type="email" name="email"/>
+                <label htmlFor={"email"}>Email*</label>
+                <input onChange={ (e) => handleChange(e,"email")} required type="email" id="email" name="email" value={email} placeholder={"Your email"}/>
 
-                <p>Phone*</p>
-                <input required type="text" name="phone"/>
+                <label htmlFor={"phone"}>Phone number*</label>
+                <input onChange={ (e) => handleChange(e,"phone")} required type="text" id="phone" name="phone" value={phone} placeholder={"Your phone number"}/>
 
-                <p>Message*</p>
-                <textarea required type="text" name="message"/>
+                <label htmlFor={"message"}>Message*</label>
+                <textarea onChange={ (e) => handleChange(e,"message")} required type="text" id="message" name="message" value={message} placeholder={"Your message"}/>
 
-                <button type={"submit"}>Send</button>
+                <Button type={"submit"}>Send</Button>
             </form>
         </div>
     );
