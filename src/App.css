@@ -123,6 +123,46 @@
     font-size: 1.5rem
 }
 
+.intruduction {
+    display: inline-block;
+    justify-content: center;
+    width: 40rem;
+}
+
+.text {
+    color: white
+}
+.why-us {
+    display: inline-grid;
+    justify-content: center;
+    width: 40rem;
+}
+
+.farawell-message {
+    margin-bottom: 0px;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+body {
+    background-color: #333333
+}
+
+p {
+    color : white
+}
+
+h4 {
+    color: white
+}
+
+h6 {
+    color : white
+}
+
+ul {
+    color :white
+}
 
 @media only screen and (max-width: 823px) {
     body {

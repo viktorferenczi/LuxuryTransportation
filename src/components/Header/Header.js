@@ -21,9 +21,9 @@ export const Header = () => {
                     </div>
 
                     <div className="social-div" >
-                        <i className="fa fa-facebook-square icon" aria-hidden="true"></i>
-                        <i className="fa fa-google icon" aria-hidden="true"></i>
-                        <i className="fa fa-map-marker icon" aria-hidden="true"></i>
+                        <i className="fa fa-facebook-square fa-lg icon" aria-hidden="true"></i>
+                        <i className="fa fa-google fa-lg icon" aria-hidden="true"></i>
+                        <i className="fa fa-map-marker fa-lg icon" aria-hidden="true"></i>
                     </div> 
                     <div>
                         <p className="email" >fivestar-inc@hotmail.com</p>
