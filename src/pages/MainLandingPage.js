@@ -1,6 +1,6 @@
 
 import { Footer } from "../components/Footer/Footer";
-import {Header} from "../components/Header/Header";
+import { Header } from "../components/Header/Header";
 import { CarChooser } from "../components/MainLandingPage/CarChooser";
 import { FounderInfo } from "../components/MainLandingPage/FounderInfo";
 import { Promotion } from "../components/MainLandingPage/Promotion";
