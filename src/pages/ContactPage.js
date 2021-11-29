@@ -8,7 +8,7 @@ import { EmailSender } from "../components/ContactPage/EmailSender";
 export const ContactPage = () => {
     return(
         <div>
-            <Header viewing={"Main"}/>
+            <Header/>
             <h3>Contact Information</h3>
             
             <div style={{flexDirection:"row", display:'flex'}}>
