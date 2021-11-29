@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer/Footer";
 export const PricesPage = () => {
     return(
         <div>
-            <Header viewing={"Prices"}/>
+            <Header/>
             <h1>Prices and Service types</h1>
 
             <div>
