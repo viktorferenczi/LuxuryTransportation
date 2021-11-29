@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -42,10 +42,11 @@
     width: 100%;
     position: fixed;
     top: 0;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
 }
 
 .logo-image {
-    width: 8rem
+    width: 7rem;
 }
 
 .header-h3 {
@@ -62,8 +63,9 @@
 .contact {
     color: white;
     background-color: #b1955a;
-    width: 10rem;
+    width: 12rem;
     height: 3rem;
+    margin-top: 1rem;
     margin-right: 3rem;
     border-radius: 4rem;
     line-height: 3rem;
@@ -71,9 +73,7 @@
 }
 
 .social-div {
-    
     display: contents;
-  
 }
 
 .main-menu {
@@ -84,22 +84,33 @@
 
 .first-menu-item {
     color: white;
-    font-size:larger
+    font-size:larger;
+    text-decoration:none;
 }
+
+.first-menu-item:hover{
+    color: #b1955a;
+}
+
+.main-menu-item:hover{
+    color: #b1955a;
+}
+
 
 .main-menu-item {
     color: white;
     margin-left: 4rem;
-    font-size: larger
+    font-size: larger;
+    text-decoration:none;
 }
 
 .phone-number-contact {
-    margin-left : 3rem;
+    margin-left : 10rem;
     align-self :center
 }
 
 .founder-info {
-    margin-top: 10rem;
+    margin-top: 9rem;
 }
 
 .email {
@@ -127,15 +138,22 @@
     display: inline-block;
     justify-content: center;
     width: 40rem;
+    padding: 1rem;
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
 }
 
 .text {
     color: white
 }
+
 .why-us {
     display: inline-grid;
     justify-content: center;
     width: 40rem;
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+    padding: 1rem;
 }
 
 .farawell-message {
@@ -145,8 +163,9 @@
 }
 
 .background-image {
-    background-image: url(https://static.wixstatic.com/media/5574c387a7fb4fa38b99b09526e24008.jpg/v1/fill/w_1908,h_545,al_c,q_85,usm_0.66_1.00_0.01/5574c387a7fb4fa38b99b09526e24008.webp)
+    background-image: url(https://static.wixstatic.com/media/5574c387a7fb4fa38b99b09526e24008.jpg/v1/fill/w_1908,h_545,al_c,q_85,usm_0.66_1.00_0.01/5574c387a7fb4fa38b99b09526e24008.webp);
 }
+
 
 .footer {
     background-color: rgb(20, 20, 20);
