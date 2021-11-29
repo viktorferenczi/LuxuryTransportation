@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer/Footer";
 export const BookingPage = () => {
     return(
         <div>
-            <Header viewing={"Main"}/>
+            <Header/>
             <p>booking</p>
             <Footer/>
         </div>
