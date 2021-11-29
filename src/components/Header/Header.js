@@ -5,11 +5,10 @@ export const Header = () => {
     return (
         <div>
             <header className="header" >
-                
                 <div className="main-menu">
                     <img className="logo-image" src={logo} alt="Logo" />
                     <a href={"/"} className="first-menu-item">Home</a>
-                    {/*<a className="first-menu-item">Events</a>*/}
+                    <a href={"/fleet"} className="main-menu-item">Fleet</a>
                     <a href={"/prices"} className="main-menu-item">Prices</a>
                     <a href={"/booking"} className="main-menu-item">Booking</a>
                     <a href={"/contact"} className="main-menu-item">Contact</a>
@@ -29,8 +28,6 @@ export const Header = () => {
                         <p className="email" >fivestar-inc@hotmail.com</p>
                         <i className="fa fa-envelope email-icon"></i>
                     </div>
-                   
-                   
                 </div>
             </header>
            
