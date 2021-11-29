@@ -65,8 +65,8 @@ export const EmailSender = () => {
             });
     };
 
-    return(
-        <div>
+    return (
+        <div style={{ marginTop: '10rem' }}>
             <Alert show={show} variant="success">
                 <Alert.Heading>Email Sent</Alert.Heading>
                 <p>Thank you for your letter. We will contact you as soon as possible.</p>

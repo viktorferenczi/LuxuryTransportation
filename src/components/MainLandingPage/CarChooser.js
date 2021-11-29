@@ -9,7 +9,7 @@ export const CarChooser = () => {
             name:'CHEVROLET SUBURBAN',
             year: '2020',
             seats: '6 seats',
-            imgPath:image
+            imgPath: image,
         },
         {
             name:'MERCEDES SPRINTER',
@@ -36,12 +36,15 @@ export const CarChooser = () => {
     );
 
 
-    return(
-        <div>
-            <h1 className="text" >CHOOSE FROM OUR VEHICLES</h1>
-            <img src="https://static.wixstatic.com/media/5574c387a7fb4fa38b99b09526e24008.jpg/v1/fill/w_1908,h_545,al_c,q_85,usm_0.66_1.00_0.01/5574c387a7fb4fa38b99b09526e24008.webp"></img>
-            <div style={{flexDirection:"row", display:'flex'}}>
-                {listItems}
+    return (
+        <div style={{ display: "inline-grid" }}>
+            <h1  >CHOOSE FROM OUR VEHICLES</h1>
+            <div className='background-image'>
+        
+                <div style={{ flexDirection: "row", display: 'flex' }}>
+                    {listItems}
+                </div>
+
             </div>
         </div>
     );
