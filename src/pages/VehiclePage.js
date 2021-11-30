@@ -6,7 +6,8 @@ import fleet from '../fleet.json';
 
 export const VehiclePage = () => {
     const location = useLocation()
-    const carId = location.state.car.id;
+    const carId = location.search.split("=")[1];
+  
     let carList = Object.values(fleet);
     let displayedCar = null;
 
@@ -15,6 +16,10 @@ export const VehiclePage = () => {
             displayedCar = car;
         }
     });
+
+    if(!displayedCar){
+        window.location.href = "/";
+    }
 
     return(
         <div style={{marginTop:'9rem'}}>
