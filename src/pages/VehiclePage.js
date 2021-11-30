@@ -2,6 +2,11 @@ import { Header } from "../components/Header/Header";
 import { Footer } from "../components/Footer/Footer"
 import { useLocation } from "react-router";
 
+import chevrolet from './../store/img/fleet/chevrolet/chevrolet_small.png';
+import lincoln from './../store/img/fleet/lincoln/lincoln_small.png';
+import mercedes_basic from './../store/img/fleet/mercedes_basic/mercedes_small.png';
+import mercedes_premium from './../store/img/fleet/mercedes_premium/mercedes_small.png';
+
 import fleet from '../fleet.json';
 
 export const VehiclePage = () => {
@@ -12,7 +17,25 @@ export const VehiclePage = () => {
     let displayedCar = null;
 
     carList.forEach(car => {
-        if(car.id == carId){
+        if (car.id == carId) {
+
+            switch (car.imgPath) {
+                case "chevrolet":
+                    car.imgPath = chevrolet;
+                    break;
+                case "lincoln":
+                    car.imgPath = lincoln;
+                    break;
+                case "mercedes_basic":
+                    car.imgPath = mercedes_basic;
+                    break;
+                case "mercedes_premium":
+                    car.imgPath = mercedes_premium;
+                    break;
+                default:
+                    break;
+            }
+
             displayedCar = car;
         }
     });
