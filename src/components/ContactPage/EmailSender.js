@@ -5,7 +5,6 @@ import emailjs from 'emailjs-com';
 import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button'
 
-init("user_NI2YtL4qPeOue4aib0abR");
 
 export const EmailSender = () => {
 
@@ -57,6 +56,8 @@ export const EmailSender = () => {
             message:e.target.message.value
         };
         
+        init("user_NI2YtL4qPeOue4aib0abR");
+
         emailjs.send('service_nxyq4yu','template_u2b0o8d', templateParams, 'user_NI2YtL4qPeOue4aib0abR')
             .then((response) => {
                setShow(true);
