@@ -1,0 +1,35 @@
+{ 
+    "1":
+        {
+            "id":1,
+            "name":"CHEVROLET SUBURBAN",
+            "year": "2020",
+            "seats": "6 seats",
+            "imgPath": "chevrolet",
+            "carInfo":"Luxury Transportation, Black interior and exterior, Miami to Broward* service available, Leather seats, Bluetooth, Wi-Fi,  6-speaker audio system, HD RadioPower outlets, 5 auxiliary, 12-volt, HDMI connection A/C"
+        },
+    "2":
+        {
+            "id":2,
+            "name":"MERCEDES SPRINTER",
+            "year": "2020",
+            "seats": "6 seats",
+            "imgPath":"mercedes_basic"
+        },
+    "3":
+        {   
+            "id":3,
+            "name":"MERCEDES SPRINTER EXECUTIVE",
+            "year": "2020",
+            "seats": "13 seats",
+            "imgPath":"mercedes_premium"
+        },
+    "4":
+        {   
+            "id":4,
+            "name":"LINCOLN MKZ SEDAN",
+            "year": "2020",
+            "seats": "6 seats",
+            "imgPath": "lincoln"
+        }
+}
