@@ -23,12 +23,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainLandingPage/>}/>
-          <Route path="/fleet" element={<FleetPage/>}/>
-          <Route path="/prices" element={<PricesPage/>}/>
-          <Route path="/vehicle" element={<VehiclePage/>}/>
-          <Route path="/contact" element={<ContactPage/>}/>
-          <Route path="/booking" element={<BookingPage/>}/>
+          <Route exact path="/" element={<MainLandingPage/>}/>
+          <Route exact path="/fleet" element={<FleetPage/>}/>
+          <Route exact path="/prices" element={<PricesPage/>}/>
+          <Route exact path="/vehicle" element={<VehiclePage/>}/>
+          <Route exact path="/contact" element={<ContactPage/>}/>
+          <Route exact path="/booking" element={<BookingPage/>}/>
+          <Route path='*' element={<MainLandingPage/>} />
         </Routes>
       </BrowserRouter>
     </div>
