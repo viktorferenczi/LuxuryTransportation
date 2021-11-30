@@ -47,6 +47,7 @@
 
 .logo-image {
     width: 7rem;
+    height: 6rem;
 }
 
 .header-h3 {
@@ -174,7 +175,9 @@
 .service-inner-div {
     width: 50%;
     display: inline-block;
-    text-align: left
+    text-align: left;
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
 }
 
 .service-name {
@@ -183,7 +186,13 @@
 }
 
 .service-icon-image {
-    float: right
+    float: right;
+}
+
+.more-info-button {
+    background-color: #b1955a;
+    color: white;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
 }
 
 .footer {

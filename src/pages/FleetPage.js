@@ -14,6 +14,9 @@ export const FleetPage = () => {
     let carList = Object.values(cars);
 
     carList.forEach(car => {
+
+        let imageTag;
+
         switch (car.imgPath) {
             case "chevrolet":
                 car.imgPath = chevrolet;
@@ -30,14 +33,26 @@ export const FleetPage = () => {
             default:
                 break;
         }
+
+        if (car.id > 1) {
+            imageTag = <img style={{ width: '80%', marginBottom: '0.8rem' }} alt={car.name} src={car.imgPath} />
+
+        } else {
+            imageTag = <img style={{ width: '80%'}} alt={car.name} src={car.imgPath} />
+        }
+
+        car.imageTag = imageTag;
+
     });
+
+
     
     const listItems = carList.map( (car) =>
         <div key={car.name}>
-            <img alt={car.name} src={car.imgPath}/>
+            {car.imageTag}
             <p>{car.name}</p>
             <p>{car.year} - {car.seats}</p>
-            <Link
+            <Link className="btn more-info-button"
                 to={`/vehicle?id=${car.id}`}
                 state={{ car }}
             >More Info</Link>
@@ -47,9 +62,11 @@ export const FleetPage = () => {
 
     return (
         <div>
-            <Header/>
-                <div style={{display:'flex',flexDirection:'row', marginTop:"8rem"}}>
-                    {listItems}
+            <Header />
+            <div>
+                <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: "8rem", paddingBottom: '24rem' }}>
+                        {listItems}
+                    </div>
                 </div>
             <Footer/>
         </div>

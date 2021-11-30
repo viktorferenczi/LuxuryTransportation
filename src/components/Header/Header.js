@@ -5,8 +5,10 @@ export const Header = () => {
     return (
         <div>
             <header className="header" >
-                <div className="main-menu">
+                <div style={{ float: 'left' }}>
                     <img className="logo-image" src={logo} alt="Logo" />
+                </div>
+                <div className="main-menu">
                     <a href={"/"} className="first-menu-item">Home</a>
                     <a href={"/fleet"} className="main-menu-item">Fleet</a>
                     <a href={"/prices"} className="main-menu-item">Prices</a>

@@ -5,8 +5,8 @@ export const Footer = () => {
     return (
         <div className="footer">
             <div>
-                <p style={{color:'white'}}>© 2021 5 Star Luxury Transportation. All Rights Reserved.</p>
-                <p style={{ color: "grey" }}>AVSoftware</p>
+                <p style={{ color: 'white' }}>© 2021 5 Star Luxury Transportation. All Rights Reserved.</p>
+                <p style={{ color: "grey", marginBottom: "0" }}>AVSoftware</p>
             </div>
           
             <div>

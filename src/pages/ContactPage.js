@@ -6,8 +6,8 @@ import { EmailSender } from "../components/ContactPage/EmailSender";
 
 
 export const ContactPage = () => {
-    return(
-        <div>
+    return (
+        <div style={{ marginTop: '10rem' }}>
             <Header/>
             <h3>Contact Information</h3>
             
