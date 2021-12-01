@@ -31,8 +31,8 @@ export const BookingPage = () => {
 
     return(
         <div style={{marginTop:"8rem"}}>
-            <Header/>
-            <p>Let us provide you your unforgettable ride!</p>
+            <Header />
+            <h3 style={{ color: '#b1955a'}} >Let us provide you your unforgettable ride!</h3>
             <div style={{display:'flex',flexDirection:'row'}}>
                 <ServiceChooser
                     onSetDate={setDate}

@@ -47,8 +47,8 @@ export const FleetPage = () => {
 
 
     
-    const listItems = carList.map( (car) =>
-        <div key={car.name}>
+    const listItems = carList.map((car) =>
+        <div key={car.name} className="car-card">
             {car.imageTag}
             <p>{car.name}</p>
             <p>{car.year} - {car.seats}</p>
@@ -64,7 +64,7 @@ export const FleetPage = () => {
         <div>
             <Header />
             <div>
-                <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: "8rem", paddingBottom: '24rem' }}>
+                <div className="fleet-div">
                         {listItems}
                     </div>
                 </div>

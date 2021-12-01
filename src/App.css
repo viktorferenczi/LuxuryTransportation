@@ -173,7 +173,8 @@
 }
 
 .service-inner-div {
-    width: 50%;
+    width: 60%;
+    height: 15rem;
     display: inline-block;
     text-align: left;
     background-color: #37393d;
@@ -197,6 +198,26 @@
 
 .footer {
     background-color: rgb(20, 20, 20);
+}
+
+.car-card {
+    background-color:none;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+    transition:  0.5s;
+    opacity: 0.9;
+}
+
+.fleet-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8rem;
+    padding-bottom: 27.75rem;
 }
 
 body {
@@ -231,8 +252,15 @@ ul {
     color :white
 }
 
-@media only screen and (max-width: 823px) {
-    body {
-        position:absolute;
+
+@media only screen and (max-width: 1024px) {
+    .fleet-div {
+        display: grid;
+        padding-bottom: 0rem
     }
+
+    .car-card{
+        margin-bottom: 2rem;
+    }
+
 }
