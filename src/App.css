@@ -48,6 +48,7 @@
 .logo-image {
     width: 7rem;
     height: 6rem;
+    margin-left: 3rem;
 }
 
 .header-h3 {
@@ -165,6 +166,7 @@
 
 .background-image {
     background-image: url(https://static.wixstatic.com/media/5574c387a7fb4fa38b99b09526e24008.jpg/v1/fill/w_1908,h_545,al_c,q_85,usm_0.66_1.00_0.01/5574c387a7fb4fa38b99b09526e24008.webp);
+    filter: sepia(0.5);
 }
 
 .service-main-div {
@@ -211,6 +213,10 @@
     box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
     transition:  0.5s;
     opacity: 0.9;
+}
+
+.car-card:hover > .more-info-button {
+    box-shadow: none
 }
 
 .fleet-div {

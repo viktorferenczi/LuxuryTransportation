@@ -1,4 +1,4 @@
-import '../../App.css';
+
 import logo from '../../store/img/logo.png'
 
 export const Footer = () => {

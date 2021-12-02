@@ -5,7 +5,8 @@
  *  Copyright https://github.com/viktorferenczi
  * 
  */
- import React from 'react';
+import React from 'react';
+
 
 // Routing - Router
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
