@@ -5,7 +5,8 @@ export const Header = () => {
     return (
         <div>
             <header className="header" >
-                <div style={{ float: 'left' }}>
+
+                <div className="logo-image-div">
                     <img className="logo-image" src={logo} alt="Logo" />
                 </div>
                 <div className="main-menu">
@@ -29,6 +30,34 @@ export const Header = () => {
                     <div>
                         <p className="email" >fivestar-inc@hotmail.com</p>
                         <i className="fa fa-envelope email-icon"></i>
+                    </div>
+                </div>
+
+                <div className="hamburger-menu" >
+                    <div>
+                        <div class="center">
+                            <div></div>
+                        </div>
+                        <div class="dropdown-content">
+                           <a href={"/"} className="first-menu-item">Home</a>
+                            <a href={"/fleet"} className="main-menu-item">Fleet</a>
+                            <a href={"/prices"} className="main-menu-item">Prices</a>
+                            <a href={"/booking"} className="main-menu-item">Booking</a>
+                            <a href={"/contact"} className="main-menu-item">Contact</a>
+                        </div>
+                     
+                    </div>
+                   
+                    <div className="social-div" >
+                        <div>
+                            <p className="email" >fivestar-inc@hotmail.com</p>
+                            <i className="fa fa-envelope email-icon"></i>
+                        </div>
+                        <div>
+                            <i className="fa fa-facebook-square fa-lg icon" aria-hidden="true"></i>
+                            <i className="fa fa-google fa-lg icon" aria-hidden="true"></i>
+                             <i className="fa fa-map-marker fa-lg icon" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </header>

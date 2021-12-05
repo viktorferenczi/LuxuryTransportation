@@ -6,8 +6,8 @@ import mercedes from "../../store/img/fleet/mercedes_basic/mercedes_small.png";
 export const CarChooser = () => {
 
     return (
-        <div style={{ display: "inline-grid", height: '34rem', width: '90rem', marginBottom: '10rem', marginTop: '2rem', zIndex: '-1' }}>
-            <div className='background-image'>
+        <div style={{ display: "inline-grid", height: '34rem', width: '90rem', marginBottom: '10rem', marginTop: '2rem', }}>
+            <div className='background-image' style={{ zIndex: "-1" }}>
                 <h1>CHOOSE FROM OUR VEHICLES</h1>
                 
             </div>
