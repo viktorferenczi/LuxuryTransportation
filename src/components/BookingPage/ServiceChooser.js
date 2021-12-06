@@ -90,7 +90,7 @@ export const ServiceChooser = (props) => {
                                 value={date}
                             />
                         </div>
-                        <p style={{marginTop:"2rem"}}>Please choose the date carefully! If you want to correct the booking after sending it to us, please contact us via email.</p>
+                        <p style={{marginTop:"2rem"}}>Please choose the date carefully! If you want to correct the booking after submitting, please contact us via email or phone.</p>
                     </div>
                     <div style={{width:'19rem', marginLeft:"3rem"}}>
                         
