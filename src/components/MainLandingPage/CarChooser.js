@@ -6,7 +6,7 @@ import mercedes from "../../store/img/fleet/mercedes_basic/mercedes_small.png";
 export const CarChooser = () => {
 
     return (
-        <div style={{ display: "inline-grid", height: '34rem', width: '90rem', marginBottom: '10rem', marginTop: '2rem', }}>
+        <div className='its-gone-now-for-mobile car-chooser-div'>
             <div className='background-image' style={{ zIndex: "-1" }}>
                 <h1>CHOOSE FROM OUR FLEET</h1>
                 <a href="/fleet">Fleet button</a>

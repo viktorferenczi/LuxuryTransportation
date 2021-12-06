@@ -39,7 +39,7 @@ export const Header = () => {
                             <div></div>
                         </div>
                         <div class="dropdown-content">
-                           <a href={"/"} className="first-menu-item">Home</a>
+                            <a href={"/"} className="first-menu-item">Home</a>
                             <a href={"/fleet"} className="main-menu-item">Fleet</a>
                             <a href={"/prices"} className="main-menu-item">Prices</a>
                             <a href={"/booking"} className="main-menu-item">Booking</a>
@@ -51,7 +51,8 @@ export const Header = () => {
                     <div className="social-div" >
                         <div>
                             <p className="email" >fivestar-inc@hotmail.com</p>
-                            <i className="fa fa-envelope email-icon"></i>
+                            <i className="fa fa-envelope fa-lg email-icon">
+                            </i>
                         </div>
                         <div>
                             <i className="fa fa-facebook-square fa-lg icon" aria-hidden="true"></i>

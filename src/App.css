@@ -43,6 +43,7 @@
     position: fixed;
     top: 0;
     box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+    z-index: 1
 }
 
 .logo-image {
@@ -146,6 +147,7 @@
     padding: 1rem;
     background-color: #37393d;
     box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+    margin-right: 2rem;
 }
 
 .text {
@@ -233,70 +235,6 @@
     display:none
 }
 
-body {
-    background-color: #333333
-}
-
-p {
-    color : white
-}
-
-h1 {
-    color: white
-}
-
-h2 {
-    color: white
-}
-
-h3 {
-    color: white
-}
-
-h4 {
-    color: white
-}
-
-h6 {
-    color : white
-}
-
-ul {
-    color :white
-}
-
-@media only screen and (max-width: 1325px) {
-    .main-menu {
-        display: none
-    }
-
-    .hamburger-menu {
-        display:unset
-    }
-
-    .social-div {
-        display: unset;
-        position: absolute;
-        top: 38%;
-        left: 42%
-    }
-
-    .main-menu-item {
-      margin-left: 0;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .fleet-div {
-        display: grid;
-        padding-bottom: 0rem
-    }
-
-    .car-card{
-        margin-bottom: 2rem;
-    }
-}
-
 .center {
     top: 50%;
     right: 2%;
@@ -338,17 +276,15 @@ ul {
 
 .dropdown-content {
     opacity: 0.9;
-    position:absolute;
-    width:20%;
+    position: absolute;
+    width: 20%;
     top: 4rem;
-    right:3.5rem;
+    right: 3.5rem;
     display: none;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-
-
 }
 
 .dropdown-content a {
@@ -381,4 +317,158 @@ ul {
 .dropdown-content a:hover {
     background-color: #b1955a;
 }
+
+.inner-email-mobil-view {
+    display: none
+}
+
+.car-chooser-div {
+    display: inline-grid; 
+    height: 34rem;
+    width: 90rem;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+}
+
+.founder-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+@media only screen and (max-width: 1325px) {
+    .main-menu {
+        display: none
+    }
+
+    .hamburger-menu {
+        display:unset
+    }
+
+    .social-div {
+        display: unset;
+        position: absolute;
+        top: 2rem;
+        left: 42%
+    }
+
+    .main-menu-item {
+      margin-left: 0;
+    }
+
+    .first-menu-item {
+        border-bottom: solid;
+        border-bottom-width: 0.1rem;
+    }
+
+    .main-menu-item {
+        border-bottom: solid;
+        border-bottom-width: 0.1rem;
+    }
+
+    .intruduction {
+        margin-right: 0;
+        display:unset
+    }
+
+    .why-us {
+        margin-top: 2rem;
+        display:unset;
+    }
+
+    .founder-infos{
+        display:grid;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .fleet-div {
+        display: grid;
+        padding-bottom: 0rem
+    }
+
+    .car-card{
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .social-div {
+        top: 2rem;
+        left: 36%;
+    }
+
+    /*most csak kivesszük a kocsikat és a képeket hogy tudjunk mobile-ra designolni a home oldalon*/
+    .its-gone-now-for-mobile {
+        display:none
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .email {
+        display: none;
+    }
+
+    .email-icon {
+        position: absolute;
+        top: 0.4rem;
+        left: 5rem;
+    }
+
+    .social-div {
+        top: 4rem;
+        left: 38%;
+    }
+
+    .logo-image {
+        margin-left:0;
+    }
+
+    .center {
+        right: -3%;
+    }
+
+
+    .intruduction {
+        width:unset
+    }
+
+    .why-us {
+        width: unset
+    }
+}
+
+body {
+    background-color: #333333
+}
+
+p {
+    color: white
+}
+
+h1 {
+    color: white
+}
+
+h2 {
+    color: white
+}
+
+h3 {
+    color: white
+}
+
+h4 {
+    color: white
+}
+
+h6 {
+    color: white
+}
+
+ul {
+    color: white
+}
+
 

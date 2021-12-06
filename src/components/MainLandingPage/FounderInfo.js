@@ -4,8 +4,8 @@ export const FounderInfo = () => {
     return (
         <div className="founder-info" >
             <h1 style={{ color: '#b1955a',  textShadow: "5px 5px rgba(32, 32, 32, 0.747)" }}>Welcome</h1>
-            <div style={{display:'flex',flexDirection:'row', justifyContent:'center'}}>
-                    <div className="intruduction" style={{marginRight:"2rem"}}>
+            <div className="founder-infos">
+                    <div className="intruduction">
                         <h6>
                             <span style={{ color: '#b1955a', fontSize:'1.5rem'}}> Miami Luxury Transportation Professionals</span>
                         </h6>
