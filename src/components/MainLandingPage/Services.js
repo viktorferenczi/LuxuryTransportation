@@ -8,12 +8,12 @@ import serviceAirportIcon from "../../store/img/serviceAirportIcon.webp";
 
 export const Services = () => {
     return (
-        <div style={{ display: 'grid' }}>
+        <div className='services'>
             <h1 style={{color: '#b1955a' }} >SERVICES</h1>
             <p>...</p>
-            <div>
-                <div className="service-main-div" >
-                    <div className="service-inner-div" style={{ paddingBottom: '1.5rem' }}>
+            <div className='service-row'>
+                <div className="service-main-div service-first-row" >
+                    <div className="service-inner-div " style={{ paddingBottom: '1.5rem' }}>
                         <img className="service-icon-image" src={servicePartiesIcon} /> 
                         <h5 className="service-name" >PARTIES</h5>
                         <p>   
@@ -22,9 +22,9 @@ export const Services = () => {
                         </p>
                     </div>
                 </div>
-                <div className="service-main-div">
+                <div className="service-main-div service-first-row">
                    
-                    <div className="service-inner-div" style={{ paddingBottom: '3rem' }}>
+                    <div className="service-inner-div " style={{ paddingBottom: '3rem' }}>
                         <img className="service-icon-image" src={serviceAirportIcon} /> 
                         <h5 className="service-name">AIRPORT TRANSPORTATION</h5>
                         <p >    
@@ -32,10 +32,10 @@ export const Services = () => {
                         </p>
                     </div>
                 </div>
-                <div className="service-main-div">
+                <div className="service-main-div service-first-row">
                     
                     <div className="service-inner-div">
-                        <img className="service-icon-image" src={serviceWeddingIcon} /> 
+                        <img className="service-icon-image " src={serviceWeddingIcon} /> 
                         <h5 className="service-name">WEDDINGS</h5>
                         
                         <p>   
@@ -44,7 +44,7 @@ export const Services = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='service-row'>
                 <div className="service-main-div">
                    
                     <div className="service-inner-div" style={{ marginTop: '1.5rem' }}>
