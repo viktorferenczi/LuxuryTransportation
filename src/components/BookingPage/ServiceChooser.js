@@ -3,10 +3,14 @@ import Select from 'react-select';
 
 import DateTimePicker from 'react-datetime-picker';
 import Alert from 'react-bootstrap/Alert';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+
+import{ init } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 
 export const ServiceChooser = (props) => {
+
 
     // Alert
     const [show,setShow] = useState(false);
@@ -16,8 +20,10 @@ export const ServiceChooser = (props) => {
     const [car,setCar] = useState("");
     const [date,setDate] = useState("");
     const [name,setName] = useState("");
-    const [phone,setEmail] = useState("");
-    const [email,setPhone] = useState("");
+    const [email,setEmail] = useState("");
+    const [phone,setPhone] = useState("");
+
+    const [warningText,setWarningText] = useState(false);
    
     const selectServices = [
         { value: 'ptp-miami-to-miami', label: 'Point to Point (Miami to Miami)' },
@@ -33,6 +39,7 @@ export const ServiceChooser = (props) => {
     ];
 
     const onChangeHandler = (event,type) =>{
+        setWarningText(false);
         switch (type) {
             case 'date':
                 setDate(event);
@@ -60,6 +67,34 @@ export const ServiceChooser = (props) => {
         }
     }
 
+
+    const handleSubmit = () => {
+        
+        if(!name || !phone || !email || !car || !service || !date){
+            setWarningText(true);
+           return;
+        }
+       
+        const templateParams = {
+            name:name,
+            phone:phone,
+            email:email,
+            car:car.label,
+            service:service.label,
+            date:date
+        };
+        console.log(templateParams)
+        
+        init("user_NI2YtL4qPeOue4aib0abR");
+
+        emailjs.send('service_nxyq4yu','template_5qzcb4c', templateParams, 'user_NI2YtL4qPeOue4aib0abR')
+            .then((response) => {
+               setShow(true);
+            }, (err) => {
+                alert('We were unable to send your message! Please call us!');
+            });
+    };
+
     return (
         <div style={{ marginTop: '3rem' }}>
             <Alert show={show} variant="success">
@@ -75,7 +110,7 @@ export const ServiceChooser = (props) => {
            
             <div style={{width:'50rem', boxShadow: '12px 12px 2px 1px rgba(32, 32, 32, 0.747)', backgroundColor: '#37393d', padding:'2rem'}}>
                 <h2>Service details</h2>
-                <p>Please choose the date carefully</p>
+                {warningText ? <p style={{color:'red'}}>Please give us all the informations for the proper booking!</p> :  <p>Please choose the date carefully</p>}
                 <div style={{display:'flex',flexDirection:'row', marginTop:'2rem'}}>
                     <div style={{width:'23rem', marginLeft:"3rem"}}>
                         <div>
@@ -107,7 +142,7 @@ export const ServiceChooser = (props) => {
                         <div style={{paddingTop:'1rem'}}>
                             <Select
                                 isSearchable
-                                placeholder={"Select car"}
+                                placeholder={"Select vehicle"}
                                 value={car}
                                 onChange={(e)=>onChangeHandler(e,"car")}
                                 options={selectCars}
@@ -116,9 +151,10 @@ export const ServiceChooser = (props) => {
                         <div>
                             <input placeholder={'Full name'} value={name} onChange={(e)=>onChangeHandler(e,"name")} style={{borderRadius:6, height:'2.3rem', width:'19rem', marginTop:'1rem'}} type='text'/>
                             <input placeholder={'Phone'} value={phone} onChange={(e)=>onChangeHandler(e,"phone")} style={{borderRadius:6, height:'2.3rem', width:'19rem', marginTop:'1rem'}} type='text'/>
-                            <input placeholder={'Email'} value={email} onChange={(e)=>onChangeHandler(e,"email")} style={{borderRadius:6, height:'2.3rem', width:'19rem', marginTop:'1rem'}} type='text'/>
+                            <input placeholder={'Email'} value={email} onChange={(e)=>onChangeHandler(e,"email")} style={{borderRadius:6, height:'2.3rem', width:'19rem', marginTop:'1rem'}} type='email'/>
                         </div>
-                        <Button style={{marginTop:'1rem'}}>Book Service</Button>
+                        <Button onClick={handleSubmit} style={{marginTop:'1rem'}}>Book Service</Button>
+                        
                     </div>
                 </div>
             </div>
