@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\ContactPage",
+    "\\src\\components\\Header",
+    "\\src\\components\\MainLandingPage",
+    "\\src\\pages",
+    "\\src\\store",
+    "\\src\\store\\img",
+    "\\src\\store\\img\\fleet"
+  ],
+  "SelectedNode": "\\src\\components\\MainLandingPage\\FounderInfo.js",
+  "PreviewInSolutionExplorer": false
+}
