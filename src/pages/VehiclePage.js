@@ -8,6 +8,7 @@ import mercedes_basic from './../store/img/fleet/mercedes_basic/mercedes_small.p
 import mercedes_premium from './../store/img/fleet/mercedes_premium/mercedes_small.png';
 
 import fleet from '../fleet.json';
+import { PhotoGallery } from "../components/VehiclePage/PhotoGallery";
 
 export const VehiclePage = () => {
     const location = useLocation()
@@ -47,6 +48,7 @@ export const VehiclePage = () => {
     return(
         <div style={{marginTop:'9rem'}}>
             <Header/>
+            <PhotoGallery/>
             <img src={displayedCar.imgPath}/>
             <p>{displayedCar.name}</p>
             <p>{displayedCar.year}</p>
