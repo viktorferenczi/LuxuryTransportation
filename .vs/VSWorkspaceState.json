@@ -3,7 +3,7 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\ContactPage",
+    "\\src\\components\\Footer",
     "\\src\\components\\Header",
     "\\src\\components\\MainLandingPage",
     "\\src\\pages",
@@ -11,6 +11,6 @@
     "\\src\\store\\img",
     "\\src\\store\\img\\fleet"
   ],
-  "SelectedNode": "\\src\\components\\MainLandingPage\\FounderInfo.js",
+  "SelectedNode": "\\src\\components\\MainLandingPage\\Services.js",
   "PreviewInSolutionExplorer": false
 }
