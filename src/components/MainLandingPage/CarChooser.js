@@ -11,14 +11,15 @@ export const CarChooser = () => {
                 <h1>CHOOSE FROM OUR FLEET</h1>
                 
             </div>
+
             <div style={{ position: 'absolute', marginTop: '4rem', width:'5rem', justifySelf: 'center', background: '#b1955a', height: '2rem', borderRadius: '2rem' }}>
                 <a style={{ textDecoration: 'unset', color: 'white', verticalAlign:'middle' }} href="/fleet">Fleet</a>
             </div>
-            <div style={{ position: "absolute", top: '97%', justifySelf: 'end', zIndex: '-1' }}>
-                <img style={{ width: "35rem", marginRight: '5rem' }} src={mercedes}></img>
+            <div className="car-mercedes-div" >
+                <img className="car-mercedes-img" src={mercedes}></img>
             </div>
-            <div style={{ position: "absolute", top: '97%', zIndex: '-1' }}>
-                <img style={{ width: "35rem", marginLeft: '5rem' }} src={chevrolet}></img>
+            <div className="car-chevrolet-div" >
+                <img className="car-chevrolet-img"src={chevrolet}></img>
             </div>
            
         </div>

@@ -171,6 +171,7 @@
 
 .background-image {
     background-image: url(https://static.wixstatic.com/media/5574c387a7fb4fa38b99b09526e24008.jpg/v1/fill/w_1908,h_545,al_c,q_85,usm_0.66_1.00_0.01/5574c387a7fb4fa38b99b09526e24008.webp);
+    background-size: 100% 100%;
     filter: sepia(0.5);
 }
 
@@ -325,7 +326,7 @@
 .car-chooser-div {
     display: inline-grid; 
     height: 34rem;
-    width: 90rem;
+    width: 100%;
     margin-bottom: 10rem;
     margin-top: 2rem;
 }
@@ -337,6 +338,29 @@
 }
 .services{
     display:grid
+}
+
+.car-mercedes-div {
+    position: absolute;
+    margin-top: 18rem;
+    justify-self: end;
+    z-index: -1
+}
+
+.car-mercedes-img {
+    width: 35rem; 
+    margin-right: 5rem
+}
+
+.car-chevrolet-div {
+    position: absolute;
+    margin-top: 18rem;
+    z-index: -1
+}
+
+.car-chevrolet-img {
+    width: 35rem;
+    margin-left: 5rem
 }
 
 @media only screen and (max-width: 1325px) {
@@ -398,6 +422,19 @@
     .service-main-div {
         width:unset;
     }
+
+
+    .car-mercedes-img {
+        width: 22rem;
+        margin-right: unset;
+        margin-top: 6rem;
+    }
+
+    .car-chevrolet-img {
+        width: 22rem;
+        margin-left: 1rem;
+        margin-top: 6rem;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -419,7 +456,7 @@
 
     /*most csak kivesszük a kocsikat és a képeket hogy tudjunk mobile-ra designolni a home oldalon*/
     .its-gone-now-for-mobile {
-        display:none
+        
     }
 }
 
@@ -467,6 +504,37 @@
 
     .service-row {
         width: unset;
+    }
+
+    .car-chooser-div {
+        height: 12rem;
+        width: 100%
+
+    }
+
+    .car-mercedes-div {
+        position: absolute;
+        margin-top:unset;
+        justify-self: end;
+        z-index: -1;
+    }
+
+    .car-mercedes-img {
+        width: 10rem;
+        margin-right: unset;
+        margin-top: 7.5rem;
+    }
+
+    .car-chevrolet-div {
+        position: absolute;
+        margin-top: unset;
+        z-index: -1
+    }
+
+    .car-chevrolet-img {
+        width: 9rem;
+        margin-left: unset;
+        margin-top: 8rem;
     }
 
 }
