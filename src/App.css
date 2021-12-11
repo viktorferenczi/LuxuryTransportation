@@ -448,18 +448,53 @@
     }
 }
 
+@media only screen and (max-width: 725px) {
+    .car-chooser-div {
+        height:21rem;
+    }
+
+    .car-mercedes-div {
+        margin-top: 7rem;
+
+    }
+    .car-chevrolet-div {
+        margin-top: 7rem;
+    }
+
+    .car-mercedes-img {
+        width: 15rem;
+    }
+
+    .car-chevrolet-img {
+        width: 15rem;
+    }
+
+    .service-main-div {
+        width: unset
+    }
+
+    .service-inner-div {
+        width: 70%
+    }
+
+    .service-row {
+        width: unset;
+    }
+
+    .intruduction {
+        width: 30rem;
+    }
+    .why-us {
+        width: 30rem;
+    }
+}
+
 @media only screen and (max-width: 625px) {
     .social-div {
         top: 2rem;
         left: 36%;
     }
-
-    /*most csak kivesszük a kocsikat és a képeket hogy tudjunk mobile-ra designolni a home oldalon*/
-    .its-gone-now-for-mobile {
-        
-    }
 }
-
 
 @media only screen and (max-width: 500px) {
     .email {

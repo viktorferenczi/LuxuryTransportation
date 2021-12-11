@@ -16,7 +16,7 @@ export const FounderInfo = () => {
                             From the start we used only SUVs, since then we expanded our collection with other vehicles, and we are only developing to provide even more vehicle types to our customers!
                         </p>
                         <p style={{ textAlign: 'left', marginBottom: '4rem'}}>
-                            You can take a look at our vehicles online anytime. If you want to see the car in person, call us, and we will be at your service to preview the vehicle before <a href="/booking" style={{ textDecoration: 'underline' }} >booking</a>.
+                        You can take a look at our vehicles online anytime. If you want to see the car in person, call us, and we will be at your service to preview the vehicle before <a href="/booking" style={{ color:'#b1955a', textDecoration: 'underline' }} >booking</a>.
                         </p>
                     </div>
 
