@@ -232,8 +232,17 @@
     padding-bottom: 27.75rem;
 }
 
+.fleet-intruduction {
+    display: inline-grid;
+    justify-content: center;
+    width: 40rem;
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgb(32 32 32 / 75%);
+    padding: 1rem;
+}
+
 .hamburger-menu {
-    display:none
+    display: none
 }
 
 .center {
@@ -363,7 +372,73 @@
     margin-left: 5rem
 }
 
+.service-details {
+    margin-left: 10rem;
+    width: 30rem;
+    height: 20rem;
+    padding: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: rgb(32 32 32 / 75%) 12px 12px 2px 1px;
+    background-color: rgb(55, 57, 61);
+}
+
 @media only screen and (max-width: 1325px) {
+    .phone-number-contact {
+        margin-left : 2rem;
+    }
+
+    .main-menu-item {
+        margin-left: 1rem;
+    }
+
+    .intruduction {
+        margin-right: 0;
+        display: unset
+    }
+
+    .why-us {
+        margin-top: 2rem;
+        display: unset;
+    }
+
+    .founder-infos {
+        display: grid;
+    }
+
+    .service-first-row {
+        margin-top: 1.5rem;
+    }
+
+    .service-row {
+        float: left;
+        width: 50%;
+    }
+
+    .services {
+        display: unset
+    }
+
+    .service-main-div {
+        width: unset;
+    }
+
+
+    .car-mercedes-img {
+        width: 22rem;
+        margin-right: unset;
+        margin-top: 6rem;
+    }
+
+    .car-chevrolet-img {
+        width: 22rem;
+        margin-left: 1rem;
+        margin-top: 6rem;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
     .main-menu {
         display: none
     }
@@ -393,57 +468,12 @@
         border-bottom-width: 0.1rem;
     }
 
-    .intruduction {
-        margin-right: 0;
-        display:unset
-    }
-
-    .why-us {
-        margin-top: 2rem;
-        display:unset;
-    }
-
-    .founder-infos{
-        display:grid;
-    }
-   .service-first-row {
-        margin-top: 1.5rem;
-    }
-
-    .service-row {
-        float: left;
-        width: 50%;
-    }
-
-    .services {
-        display: unset
-    }
-
-    .service-main-div {
-        width:unset;
-    }
-
-
-    .car-mercedes-img {
-        width: 22rem;
-        margin-right: unset;
-        margin-top: 6rem;
-    }
-
-    .car-chevrolet-img {
-        width: 22rem;
-        margin-left: 1rem;
-        margin-top: 6rem;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
     .fleet-div {
         display: grid;
         padding-bottom: 0rem
     }
 
-    .car-card{
+    .car-card {
         margin-bottom: 2rem;
     }
 }
@@ -487,6 +517,10 @@
     .why-us {
         width: 30rem;
     }
+
+    .fleet-intruduction {
+        width: 30rem;
+    }
 }
 
 @media only screen and (max-width: 625px) {
@@ -527,6 +561,10 @@
 
     .why-us {
         width: unset
+    }
+
+    .fleet-intruduction {
+        width: unset;
     }
 
     .service-main-div{

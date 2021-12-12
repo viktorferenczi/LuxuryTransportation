@@ -76,7 +76,7 @@ export const Services = () => {
                     </div>
                 </div>
             </div>
-            <div style={{ display: 'inline-block' }}>
+            <div style={{ display: 'inline-block', marginTop: '2rem' }}>
                 <h2>WE SPECIALIZE IN MIAMI TRANSPORTATION SERVICE TO ORLANDO AND KEYS FROM FORT LAUDERDALE OR MIAMI AIRPORT</h2>
             </div>
         </div>

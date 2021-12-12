@@ -64,9 +64,11 @@ export const FleetPage = () => {
         <div>
             <Header />
             <div style={{marginTop:"8rem"}}>
-                <h4>5 Star Fleet</h4>
-                <p>Elegant, comfortable, executive-level style across the board, our Sedans and SUVs are all accompanied by a professional and experienced chauffeur. Vehicle makes offered include Lincoln, Mercedes, and Chevrolet. Sedans are perfect for 3-4 passengers while SUVs may accommodate up to 7 passengers.</p>
-                <p> Some vehicles have WiFi, for specific requests or further assistance choosing the right vehicle for your needs, please call our reservations team.</p>
+                <h4 style={{ color: '#b1955a' }}>5 Star Fleet</h4>
+                <div className="fleet-intruduction">
+                    <p style={{ textAlign: 'left' }}>Elegant, comfortable, executive-level style across the board, our Sedans and SUVs are all accompanied by a professional and experienced chauffeur. Vehicle makes offered include Lincoln, Mercedes, and Chevrolet. Sedans are perfect for 3-4 passengers while SUVs may accommodate up to 7 passengers.</p>
+                    <p style={{ textAlign: 'left' }}> Some vehicles have WiFi, for specific requests or further assistance choosing the right vehicle for your needs, please call our reservations team.</p>
+                </div>
                 <div className="fleet-div">
                         {listItems}
                     </div>
