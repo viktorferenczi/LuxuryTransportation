@@ -182,6 +182,7 @@
 
 .service-inner-div {
     width: 60%;
+    padding:3%;
     height: 15rem;
     display: inline-block;
     text-align: left;

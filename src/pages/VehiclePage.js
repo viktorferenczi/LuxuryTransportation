@@ -48,12 +48,16 @@ export const VehiclePage = () => {
     return(
         <div style={{marginTop:'9rem'}}>
             <Header/>
-            <PhotoGallery/>
-            <img src={displayedCar.imgPath}/>
-            <p>{displayedCar.name}</p>
-            <p>{displayedCar.year}</p>
-            <p>{displayedCar.seats}</p>
-            <p>{displayedCar.carInfo}</p>
+            <div style={{display:'flex',flexDirection:'row'}}>
+                <PhotoGallery displayedCar={displayedCar}/>
+                <div>
+                    <p>{displayedCar.name}</p>
+                    <p>{displayedCar.year}</p>
+                    <p>{displayedCar.seats}</p>
+                    <p>{displayedCar.carInfo}</p>
+                </div>
+            </div>
+            
             <Footer/>
         </div>
     )

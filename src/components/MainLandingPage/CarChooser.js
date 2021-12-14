@@ -7,7 +7,7 @@ export const CarChooser = () => {
 
     return (
         <div className='its-gone-now-for-mobile car-chooser-div'>
-            <div className='background-image' style={{ zIndex: "-1" }}>
+            <div className='background-image' style={{ zIndex: "-1", borderStyle:'solid', borderWidth:5, borderColor:'black' }}>
                 <h1>CHOOSE FROM OUR FLEET</h1>
                 
             </div>

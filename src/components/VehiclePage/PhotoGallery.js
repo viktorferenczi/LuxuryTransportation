@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { photos } from "../VehiclePage/photo";
+import { chevroletPhotoes, mercedesBasicPhotoes, mercedesExecPhotoes, lincolnPhotoes } from "../VehiclePage/photo";
 
-export const PhotoGallery = () => {
+export const PhotoGallery = (props) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -17,15 +17,39 @@ export const PhotoGallery = () => {
     setViewerIsOpen(false);
   };
 
+  let chosenCarPhotoes = null;
+
+  switch (props.displayedCar.id) {
+    case 1:
+        //Chevrolet Suburban
+        chosenCarPhotoes = chevroletPhotoes;
+        break;
+    case 2:
+        //Mercedes basic
+        chosenCarPhotoes = mercedesBasicPhotoes;
+        break;
+    case 3:
+        //Mercedes exec basic
+        chosenCarPhotoes = mercedesExecPhotoes;
+        break; 
+    case 4:
+        //Lincoln
+        chosenCarPhotoes = lincolnPhotoes;
+        break; 
+      default:
+          break;
+  }
+  console.log(chosenCarPhotoes)
+
   return (
     <div>
-      <Gallery photos={photos} onClick={openLightbox} />
+        <div style={{width:"50rem"}}> <Gallery photos={chosenCarPhotoes} onClick={openLightbox}/></div>
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={photos.map(x => ({
+              views={chosenCarPhotoes.map(x => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title

@@ -1,48 +1,65 @@
-export const photos = [
+export const chevroletPhotoes = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-      width: 4,
-      height: 3
+        src: require('../../store/img/fleet/chevrolet/chevrolet_SUV.webp').default,
+        width: 1.5,
+        height: 1
     },
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-      width: 1,
-      height: 1
+        src: require('../../store/img/fleet/chevrolet/chevrolet_SUV_interior.webp').default,
+        width: 3,
+        height: 4
     },
     {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-      width: 3,
-      height: 4
+        src: require('../../store/img/fleet/chevrolet/chevrolet_SUV_interior_v2.webp').default,
+        width: 5,
+        height: 2
     },
     {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-      width: 3,
-      height: 4
+        src: require('../../store/img/fleet/chevrolet/chevrolet_v2.webp').default,
+        width: 4,
+        height: 3
     },
+];
+
+export const mercedesBasicPhotoes  = [
     {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-      width: 4,
-      height: 3
+        src: require('../../store/img/fleet/mercedes_basic/sprinter.webp').default,
+        width: 1,
+        height: 1
     }
-  ];
-  
+];
+
+export const mercedesExecPhotoes   = [
+    {
+        src: require('../../store/img/fleet/mercedes_premium/sprinter_executive_interior.webp').default,
+        width: 2,
+        height: 1
+    },
+    {
+        src: require('../../store/img/fleet/mercedes_premium/executive_v3.webp').default,
+        width: 3,
+        height: 2
+    },
+    {
+        src: require('../../store/img/fleet/mercedes_premium/executive_interior_v2.webp').default,
+        width: 3,
+        height: 2
+    },
+    {
+        src: require('../../store/img/fleet/mercedes_premium/executive_interior_v4.webp').default,
+        width: 4,
+        height: 3
+    },
+];
+export const lincolnPhotoes  = [
+    {
+        src: require('../../store/img/fleet/lincoln/lincoln_interior.webp').default,
+        width: 4,
+        height: 3
+    },
+    {
+        src: require('../../store/img/fleet/lincoln/lincoln_interior_v2.webp').default,
+        width: 3,
+        height: 2
+    }
+];

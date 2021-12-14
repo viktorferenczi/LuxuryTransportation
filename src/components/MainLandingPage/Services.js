@@ -10,7 +10,6 @@ export const Services = () => {
     return (
         <div className='services'>
             <h1 style={{color: '#b1955a' }} >SERVICES</h1>
-            <p>...</p>
             <div className='service-row'>
                 <div className="service-main-div service-first-row" >
                     <div className="service-inner-div " style={{ paddingBottom: '1.5rem' }}>
