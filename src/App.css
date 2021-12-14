@@ -418,12 +418,30 @@
     color:white
 }
 
-.submit-service-button:hover {
+.plan-button {
+    background-color: #b1955a;
+    width: 10rem;
     border-color: #b1955a;
-    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
-    transition:  0.5s;
-
+    color: white
 }
+
+.send-contact-mail-button {
+    width: 10rem;
+    align-self: center;
+    margin-top: 2rem;
+    border-color: #b1955a;
+    color: white;
+    background-color: #b1955a;
+}
+
+.submit-service-button:hover, .plan-button:hover, .send-contact-mail-button:hover {
+    border-color: #b1955a;
+    background-color: #b1955a;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+    transition: 0.5s;
+}
+
+
 
 @media only screen and (max-width: 1325px) {
     .phone-number-contact {

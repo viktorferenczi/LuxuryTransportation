@@ -97,9 +97,9 @@ export const ServiceChooser = (props) => {
 
     return (
         <div style={{ marginTop: '3rem' }}>
-            <Alert show={show} >
+            <Alert show={show} variant="success">
                 <Alert.Heading>Email Sent</Alert.Heading>
-                <p>Thank you for your request. We will contact you soon!</p>
+                <p style={{ color: 'black' }}>Thank you for your request. We will contact you soon!</p>
                 <hr />
                 <div className="d-flex justify-content-end">
                     <Button onClick={() => setShow(false)} variant="outline-success">
