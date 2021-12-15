@@ -99,7 +99,7 @@ export const ServiceChooser = (props) => {
         <div style={{ marginTop: '3rem' }}>
             <Alert show={show} variant="success">
                 <Alert.Heading>Email Sent</Alert.Heading>
-                <p>Thank you for your request. We will contact you soon!</p>
+                <p style={{ color: 'black' }}>Thank you for your request. We will contact you soon!</p>
                 <hr />
                 <div className="d-flex justify-content-end">
                     <Button onClick={() => setShow(false)} variant="outline-success">
@@ -108,11 +108,11 @@ export const ServiceChooser = (props) => {
                 </div>
             </Alert>
            
-            <div style={{width:'50rem', boxShadow: '12px 12px 2px 1px rgba(32, 32, 32, 0.747)', backgroundColor: '#37393d', padding:'2rem'}}>
+            <div className = "service-chooser-main-div">
                 <h2>Service details</h2>
-                {warningText ? <p style={{color:'red'}}>Please give us all the informations for the proper booking!</p> :  <p>Please choose the date carefully</p>}
-                <div style={{display:'flex',flexDirection:'row', marginTop:'2rem'}}>
-                    <div style={{width:'23rem', marginLeft:"3rem"}}>
+                {warningText ? <p style={{ color: 'red' }}>Please give us all the informations for the proper booking!</p> : <p>Please choose the date carefully</p>}
+                <div className = 'service-possibilities-div'>
+                    <div className="service-date-chooser">
                         <div>
                             <DateTimePicker
                                 minDate={new Date()}
@@ -127,7 +127,7 @@ export const ServiceChooser = (props) => {
                         </div>
                         <p style={{marginTop:"2rem"}}>Please choose the date carefully! If you want to correct the booking after submitting, please contact us via email or phone.</p>
                     </div>
-                    <div style={{width:'19rem', marginLeft:"3rem"}}>
+                    <div className="service-type-chooser">
                         
                         <div style={{paddingTop:'1rem'}}>
                             <Select
@@ -149,11 +149,11 @@ export const ServiceChooser = (props) => {
                             />
                         </div>
                         <div>
-                            <input placeholder={'Full name'} value={name} onChange={(e)=>onChangeHandler(e,"name")} style={{borderRadius:6, height:'2.3rem', width:'19rem', marginTop:'1rem'}} type='text'/>
-                            <input placeholder={'Phone'} value={phone} onChange={(e)=>onChangeHandler(e,"phone")} style={{borderRadius:6, height:'2.3rem', width:'19rem', marginTop:'1rem'}} type='text'/>
-                            <input placeholder={'Email'} value={email} onChange={(e)=>onChangeHandler(e,"email")} style={{borderRadius:6, height:'2.3rem', width:'19rem', marginTop:'1rem'}} type='email'/>
+                            <input placeholder={'Full name'} value={name} onChange={(e)=>onChangeHandler(e,"name")} className="user-data" type='text'/>
+                            <input placeholder={'Phone'} value={phone} onChange={(e) => onChangeHandler(e, "phone")} className="user-data" type='text'/>
+                            <input placeholder={'Email'} value={email} onChange={(e) => onChangeHandler(e, "email")} className="user-data" type='email'/>
                         </div>
-                        <Button onClick={handleSubmit} style={{marginTop:'1rem'}}>Book Service</Button>
+                        <a className="submit-service-button btn" onClick={handleSubmit} >Book Service</a>
                         
                     </div>
                 </div>

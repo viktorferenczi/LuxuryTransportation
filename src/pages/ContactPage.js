@@ -10,8 +10,8 @@ export const ContactPage = () => {
         <div style={{ marginTop: '10rem' }}>
             <Header/>
             <h3>Contact Information</h3>
-            
-            <div style={{flexDirection:"row", display:'flex'}}>
+
+            <div style={{ flexDirection: "row", display: 'inline-grid' }}>
                 <CompanyInfo/>
                 <RidePlanner/>
                 <EmailSender/>

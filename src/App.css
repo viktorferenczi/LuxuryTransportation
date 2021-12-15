@@ -384,6 +384,66 @@
     background-color: rgb(55, 57, 61);
 }
 
+.service-chooser-main-div {
+    width: 50rem;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+    background-color: #37393d;
+    padding: 2rem
+}
+
+.service-possibilities-div {
+    display: flex;
+    margin-top: 2rem
+}
+
+.service-date-chooser {
+    width: 23rem;
+    margin-left: 3rem
+}
+
+.service-type-chooser {
+    width: 19rem;
+    margin-left: 3rem;
+}
+
+.user-data {
+    border-radius: 6px;
+    height:2.3rem; width:19rem;
+    margin-top:1rem
+}
+
+.submit-service-button {
+    background-color: #b1955a;
+    margin-top: 1rem;
+    border-color: #b1955a;
+    color:white
+}
+
+.plan-button {
+    background-color: #b1955a;
+    width: 10rem;
+    border-color: #b1955a;
+    color: white
+}
+
+.send-contact-mail-button {
+    width: 10rem;
+    align-self: center;
+    margin-top: 2rem;
+    border-color: #b1955a;
+    color: white;
+    background-color: #b1955a;
+}
+
+.submit-service-button:hover, .plan-button:hover, .send-contact-mail-button:hover {
+    border-color: #b1955a;
+    background-color: #b1955a;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+    transition: 0.5s;
+}
+
+
+
 @media only screen and (max-width: 1325px) {
     .phone-number-contact {
         margin-left : 2rem;
@@ -478,6 +538,29 @@
         margin-bottom: 2rem;
     }
 }
+@media only screen and (max-width: 850px) {
+    .service-possibilities-div {
+        display: inline-grid;
+    }
+
+    .service-chooser-main-div {
+        width: 30rem;
+    }
+
+    .service-details {
+        margin-left: 0;
+    }
+
+
+    .service-date-chooser {
+        margin-left: 0
+    }
+
+    .service-type-chooser {
+        margin-left: 2rem;
+    }
+}
+
 
 @media only screen and (max-width: 725px) {
     .car-chooser-div {
@@ -522,6 +605,7 @@
     .fleet-intruduction {
         width: 30rem;
     }
+
 }
 
 @media only screen and (max-width: 625px) {
@@ -609,6 +693,29 @@
         width: 9rem;
         margin-left: unset;
         margin-top: 8rem;
+    }
+
+    .service-chooser-main-div {
+        width: unset;
+        padding: unset;
+    }
+
+    .service-details {
+        width: unset;
+        padding: unset;
+    }
+
+    .service-date-chooser {
+        width:19rem;
+    }
+
+    .service-type-chooser {
+        width: 16rem;
+        margin-left: 1.5rem;
+    }
+
+    .user-data {
+        width:16rem;
     }
 
 }

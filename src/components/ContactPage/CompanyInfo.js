@@ -9,10 +9,10 @@ export const CompanyInfo = () => {
             <p>661 Ne 195th st Miami 33179</p>
             <Mailer/>
             <p>+1 (305) 606-0139</p>
-            <a href='https://facebook.com'>Facebook</a>
-            <a href='https://facebook.com'>Google</a>
-            <a href='https://facebook.com'>Insta</a>
-            <a href='https://facebook.com'>Yelp</a>
+            <a style={{ color: '#b1955a' }} href='https://facebook.com'>Facebook</a>
+            <a style={{ marginLeft: '1rem', color: '#b1955a' }} href='https://facebook.com'>Google</a>
+            <a style={{ marginLeft: '1rem', color:'#b1955a' }} href='https://facebook.com'>Insta</a>
+            <a style={{ marginLeft: '1rem', color: '#b1955a' }} href='https://facebook.com'>Yelp</a>
         </div>
     );
 }
