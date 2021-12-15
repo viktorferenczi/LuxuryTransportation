@@ -195,6 +195,10 @@
     padding-bottom: 2rem;
 }
 
+.vehicle-name {
+    color: #b1955a;
+}
+
 .service-icon-image {
     float: right;
 }
@@ -753,3 +757,11 @@ ul {
 }
 
 
+.vehicle-info {
+    margin-left: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+}

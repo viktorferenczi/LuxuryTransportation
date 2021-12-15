@@ -45,19 +45,42 @@ export const VehiclePage = () => {
         window.location.href = "/";
     }
 
+    const handleAnchorClick = () => {
+        let intCarId = parseInt(carId);
+        
+        if(intCarId+1 == 5) {
+            window.location= "/vehicle?id=1";
+        } else {
+            window.location= "/vehicle?id=" + (intCarId+1);
+        }
+    }
+
     return(
         <div style={{marginTop:'9rem'}}>
             <Header/>
             <div style={{display:'flex',flexDirection:'row'}}>
                 <PhotoGallery displayedCar={displayedCar}/>
-                <div>
-                    <p>{displayedCar.name}</p>
+                <div className={'vehicle-info'}>
+                    <p className={"vehicle-name"} style={{fontSize:"2rem"}}>{displayedCar.name}</p>
+
+                    <div style={{display:'flex',flexDirection:'column'}}>
+                    <p className={"vehicle-name"}>Year</p>
                     <p>{displayedCar.year}</p>
-                    <p>{displayedCar.seats}</p>
+                    </div>
+
+                    
+                    <div style={{display:'flex',flexDirection:'column'}}>
+                    <p className={"vehicle-name"}>Seats</p>
+                    <p> {displayedCar.seats}</p>
+                    </div>
+
+                    <div style={{display:'flex',flexDirection:'column'}}>
+                    <p className={"vehicle-name"}>Equipment</p>
                     <p>{displayedCar.carInfo}</p>
+                    </div>
+                    <a onClick={handleAnchorClick}>Next vehicle -&gt;</a>
                 </div>
             </div>
-            
             <Footer/>
         </div>
     )
