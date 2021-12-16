@@ -7,8 +7,9 @@ import { EmailSender } from "../components/ContactPage/EmailSender";
 
 export const ContactPage = () => {
     return (
-        <div style={{ marginTop: '10rem' }}>
-            <Header/>
+        <div style={{ marginTop: '6rem' }}>
+            <Header />
+            <div className="contact-banner"> </div>
             <h3>Contact Information</h3>
 
             <div style={{ flexDirection: "row", display: 'inline-grid' }}>

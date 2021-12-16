@@ -3,6 +3,7 @@ import '../../App.css';
 export const FounderInfo = () => {
     return (
         <div className="founder-info" >
+            <div className="main-banner"> </div>
             <h1 style={{ color: '#b1955a',  textShadow: "5px 5px rgba(32, 32, 32, 0.747)" }}>Welcome</h1>
             <div className="founder-infos">
                     <div className="intruduction">
