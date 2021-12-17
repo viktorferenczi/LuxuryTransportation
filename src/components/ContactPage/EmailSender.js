@@ -80,17 +80,17 @@ export const EmailSender = () => {
             </Alert>
            
             <form onSubmit={handleSubmit} style={{ flexDirection: 'column', display: 'flex' }}>
-                <label style={{ color: 'white', textAlign: 'left' }} htmlFor={"name"}>Full Name*</label>
-                <input onChange={ (e) => handleChange(e,"name")} required type="text" id="name" name="name" value={name} placeholder={"Your name"}/>
+                <label className="emailsend-label" style={{ color: 'white', textAlign: 'left' }} htmlFor={"name"}>Full Name*</label>
+                <input className="emailsend-input" onChange={ (e) => handleChange(e,"name")} required type="text" id="name" name="name" value={name} placeholder={"Your name"}/>
 
-                <label style={{ color: 'white', textAlign: 'left' }} htmlFor={"email"}>Email*</label>
-                <input onChange={ (e) => handleChange(e,"email")} required type="email" id="email" name="email" value={email} placeholder={"Your email"}/>
+                <label className="emailsend-label" style={{ color: 'white', textAlign: 'left' }} htmlFor={"email"}>Email*</label>
+                <input className="emailsend-input" onChange={ (e) => handleChange(e,"email")} required type="email" id="email" name="email" value={email} placeholder={"Your email"}/>
 
-                <label style={{ color: 'white', textAlign: 'left' }} htmlFor={"phone"}>Phone number*</label>
-                <input onChange={ (e) => handleChange(e,"phone")} required type="text" id="phone" name="phone" value={phone} placeholder={"Your phone number"}/>
+                <label className="emailsend-label" style={{ color: 'white', textAlign: 'left' }} htmlFor={"phone"}>Phone number*</label>
+                <input className="emailsend-input" onChange={ (e) => handleChange(e,"phone")} required type="text" id="phone" name="phone" value={phone} placeholder={"Your phone number"}/>
 
-                <label style={{ color: 'white', textAlign: 'left' }} htmlFor={"message"}>Message*</label>
-                <textarea onChange={ (e) => handleChange(e,"message")} required type="text" id="message" name="message" value={message} placeholder={"Your message"}/>
+                <label className="emailsend-label" style={{ color: 'white', textAlign: 'left' }} htmlFor={"message"}>Message*</label>
+                <textarea className="emailsend-input" onChange={ (e) => handleChange(e,"message")} required type="text" id="message" name="message" value={message} placeholder={"Your message"}/>
 
                 <Button className="send-contact-mail-button" type={"submit"}>Send</Button>
             </form>

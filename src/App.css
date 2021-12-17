@@ -469,6 +469,27 @@
     border-bottom: #141414;
 }
 
+.main-page-fleet-button-div {
+    position: absolute;
+    margin-top: 14rem;
+    width: 15rem;
+    justify-self: center;
+    background: #b1955a;
+    height: 4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.main-page-fleet-button {
+    text-decoration: unset;
+    color: white;
+    vertical-align: middle;
+    font-size: xx-large;
+    position: absolute;
+    top: 0.5rem;
+    left: 5.5rem;
+}
+
 
 
 
@@ -634,6 +655,10 @@
         width: 30rem;
     }
 
+    .main-page-fleet-button-div {
+        margin-top: 8rem;
+    }
+
 }
 
 @media only screen and (max-width: 625px) {
@@ -752,6 +777,19 @@
 
     .contact-banner {
         height: 10rem
+    }
+
+    .emailsend-input {
+        margin-left:1rem;
+        margin-right:1rem;
+    }
+
+    .emailsend-label {
+        margin-left: 1rem;
+    }
+
+    .main-page-fleet-button-div {
+        margin-top: 14rem;
     }
 
 }

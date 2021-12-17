@@ -12,8 +12,8 @@ export const CarChooser = () => {
                 
             </div>
 
-            <div style={{ position: 'absolute', marginTop: '4rem', width:'5rem', justifySelf: 'center', background: '#b1955a', height: '2rem', borderRadius: '2rem' }}>
-                <a style={{ textDecoration: 'unset', color: 'white', verticalAlign:'middle' }} href="/fleet">Fleet</a>
+            <div className="main-page-fleet-button-div" >
+                <a className="main-page-fleet-button" href="/fleet">Fleet</a>
             </div>
             <div className="car-mercedes-div" >
                 <img className="car-mercedes-img" src={mercedes}></img>

@@ -34,15 +34,16 @@ export const BookingPage = () => {
             <Header />
             <h3 style={{ color: '#b1955a' }} >Let us provide you your unforgettable ride!</h3>
             <div style={{ display: 'inline-grid' }}>
-                <ChoosenService
-                    date={date}
-                    service={service}
-                    car={car}
-                />
                 <ServiceChooser
                     onSetDate={setDate}
                     onSetService={setService}
                     onSetCar={setCar}
+                />
+
+                <ChoosenService
+                    date={date}
+                    service={service}
+                    car={car}
                 />
             </div>
            
