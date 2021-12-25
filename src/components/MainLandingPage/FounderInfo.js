@@ -18,9 +18,13 @@ export const FounderInfo = () => {
                         <p style={{ textAlign: 'left' }}>
                             From the start we used only SUVs, since then we expanded our collection with other vehicles, and we are only developing to provide even more vehicle types to our customers!
                         </p>
-                        <p style={{ textAlign: 'left', marginBottom: '4rem'}}>
+                        <p style={{ textAlign: 'left'}}>
                         You can take a look at our vehicles online anytime. If you want to see the car in person, call us, and we will be at your service to preview the vehicle before <a href="/booking" style={{ color:'#b1955a', textDecoration: 'underline' }} >booking</a>.
                         </p>
+
+                        <p style={{ textAlign: 'left' }}>WE GUARANTEE THAT WILL BE YOUR DREAM RIDE!</p>
+                        <p style={{ textAlign: 'left', marginBottom: '4rem' }}>Don't forget, call us and one of our professional drivers is at your service and provide you unforgettable ride and safety!</p>
+      
                     </div>
 
                     <div className="why-us">

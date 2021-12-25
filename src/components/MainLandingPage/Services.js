@@ -10,6 +10,9 @@ export const Services = () => {
     return (
         <div className='services'>
             <h1 style={{color: '#b1955a' }} >SERVICES</h1>
+            <div style={{ display: 'inline-block', marginTop: '1rem' }}>
+                <h2>WE SPECIALIZE IN MIAMI TRANSPORTATION SERVICE TO ORLANDO AND KEYS FROM FORT LAUDERDALE OR MIAMI AIRPORT</h2>
+            </div>
             <div className='service-row'>
                 <div className="service-main-div service-first-row" >
                     <div className="service-inner-div " style={{ paddingBottom: '1.5rem' }}>
@@ -23,7 +26,7 @@ export const Services = () => {
                 </div>
                 <div className="service-main-div service-first-row">
                    
-                    <div className="service-inner-div " style={{ paddingBottom: '3rem' }}>
+                    <div className="service-inner-div" style={{ paddingBottom: '3rem' }}>
                         <img className="service-icon-image" src={serviceAirportIcon} /> 
                         <h5 className="service-name">AIRPORT TRANSPORTATION</h5>
                         <p >    
@@ -74,9 +77,6 @@ export const Services = () => {
                         </p>
                     </div>
                 </div>
-            </div>
-            <div style={{ display: 'inline-block', marginTop: '2rem' }}>
-                <h2>WE SPECIALIZE IN MIAMI TRANSPORTATION SERVICE TO ORLANDO AND KEYS FROM FORT LAUDERDALE OR MIAMI AIRPORT</h2>
             </div>
         </div>
     );
