@@ -132,7 +132,7 @@ export const ServiceChooser = (props) => {
                         <div style={{paddingTop:'1rem'}}>
                             <Select
                                 isSearchable
-                                placeholder={"Select service"}
+                                placeholder={"Select service*"}
                                 value={service}
                                 onChange={(e)=>onChangeHandler(e,"service")}
                                 options={selectServices}
@@ -142,16 +142,16 @@ export const ServiceChooser = (props) => {
                         <div style={{paddingTop:'1rem'}}>
                             <Select
                                 isSearchable
-                                placeholder={"Select vehicle"}
+                                placeholder={"Select vehicle*"}
                                 value={car}
                                 onChange={(e)=>onChangeHandler(e,"car")}
                                 options={selectCars}
                             />
                         </div>
                         <div>
-                            <input placeholder={'Full name'} value={name} onChange={(e)=>onChangeHandler(e,"name")} className="user-data" type='text'/>
-                            <input placeholder={'Phone'} value={phone} onChange={(e) => onChangeHandler(e, "phone")} className="user-data" type='text'/>
-                            <input placeholder={'Email'} value={email} onChange={(e) => onChangeHandler(e, "email")} className="user-data" type='email'/>
+                            <input placeholder={'Full name*'} value={name} onChange={(e)=>onChangeHandler(e,"name")} className="user-data" type='text'/>
+                            <input placeholder={'Phone*'} value={phone} onChange={(e) => onChangeHandler(e, "phone")} className="user-data" type='text'/>
+                            <input placeholder={'Email*'} value={email} onChange={(e) => onChangeHandler(e, "email")} className="user-data" type='email'/>
                         </div>
                         <a className="submit-service-button btn" onClick={handleSubmit} >Book Service</a>
                         
