@@ -4,7 +4,7 @@ export const FounderInfo = () => {
     return (
         <div className="founder-info" >
             <div className="main-banner">
-                <h1 style={{ fontSize:"4rem", color: '#b1955a',  textShadow: "5px 5px rgba(32, 32, 32, 0.747)", paddingTop:"8rem" }}>Reliability, safety, style</h1>
+                <h1 className="banner-label">Reliability, safety, style</h1>
             </div>
            
             <div className="founder-infos">

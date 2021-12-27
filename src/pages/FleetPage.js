@@ -65,7 +65,7 @@ export const FleetPage = () => {
             <Header />
             <div style={{ marginTop: "6rem" }}>
                 <div className="fleet-banner">
-                    <h4 style={{ color: '#b1955a', paddingTop:"3rem", fontSize:"3rem" }}>5 Star Fleet</h4>
+                    <h4 className="banner-label">5 Star Fleet</h4>
                 </div>
                 <div className="fleet-div">
                         {listItems}

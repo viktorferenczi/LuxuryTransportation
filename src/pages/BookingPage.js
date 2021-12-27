@@ -33,7 +33,7 @@ export const BookingPage = () => {
         <div style={{marginTop:"8rem"}}>
             <Header />
             <h3 style={{ color: '#b1955a' }} >Let us provide you your unforgettable ride!</h3>
-            <div style={{ display: 'inline-grid' }}>
+            <div className='booking-page'>
                 <ServiceChooser
                     onSetDate={setDate}
                     onSetService={setService}

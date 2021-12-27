@@ -384,7 +384,7 @@
 }
 
 .service-details {
-    margin-left: 10rem;
+    margin-left: 2rem;
     width: 30rem;
     height: 20rem;
     padding: 3rem;
@@ -471,7 +471,7 @@
 .main-banner {
     background-image: url("./store/img/mainPageBanner/audi_interioir.webp");
     background-size: 100% 100%;
-    height: 30rem;
+    height: 20rem;
     margin-bottom: 2rem;
     border-bottom: 2px solid #000;
 }
@@ -497,8 +497,32 @@
     left: 5.5rem;
 }
 
+.banner-label {
+    font-size: 4rem;
+    color: #b1955a;
+    text-shadow: 5px 5px rgba(32, 32, 32, 0.747);
+    padding-top:8rem
+}
 
+.emailsend-input {
+    width: 20rem;
+}
 
+.full-wide-contanct {
+   display: inline-flex
+}
+
+.low-wide-contact {
+    display: none
+}
+
+.full-wide-planner {
+    margin-bottom: 0.54rem;
+}
+
+.booking-page {
+    display: inline-flex;
+}
 
 @media only screen and (max-width: 1325px) {
     .phone-number-contact {
@@ -533,7 +557,7 @@
     }
 
     .services {
-        display: unset
+        display: inline-block
     }
 
     .service-main-div {
@@ -553,6 +577,20 @@
         margin-top: 6rem;
     }
 
+    .service-details {
+        margin-left: 10rem;
+    }
+
+    .booking-page {
+        display: inline-grid;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .fleet-intruduction {
+        width: 30rem;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -591,6 +629,32 @@
     }
 
     .car-card {
+        margin-bottom: 2rem;
+    }
+
+    .full-wide-contanct {
+        display: none
+    }
+
+    .low-wide-contact {
+        display: inline-grid
+    }
+
+    .full-wide-planner {
+        display: none;
+       
+    }
+
+    .ride-planner {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .emailsend-input {
+        width: unset;
+    }
+
+    .send-contact-mail-button {
         margin-bottom: 2rem;
     }
 }
@@ -665,7 +729,6 @@
     .main-page-fleet-button-div {
         margin-top: 8rem;
     }
-
 }
 
 @media only screen and (max-width: 625px) {
@@ -675,13 +738,6 @@
     }
 }
 
-
-@media only screen and (max-width: 1250px) {
-
-    .fleet-intruduction {
-        width: 30rem;
-    }
-}
 
 @media only screen and (max-width: 500px) {
     .email {
@@ -794,6 +850,11 @@
         height: 10rem
     }
 
+
+    .main-banner {
+        height: 10rem
+    }
+
     .emailsend-input {
         margin-left:1rem;
         margin-right:1rem;
@@ -807,9 +868,14 @@
         margin-top: 14rem;
     }
 
+    .banner-label {
+        font-size: 2rem;
+        padding-top: 3rem
+    }
+
 }
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 350px) {
     .service-inner-div {
         height: unset;
         width: unset;

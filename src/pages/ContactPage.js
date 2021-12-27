@@ -9,14 +9,28 @@ export const ContactPage = () => {
     return (
         <div style={{ marginTop: '6rem' }}>
             <Header />
-            <div className="contact-banner"> </div>
-            <h3>Contact Information</h3>
-
-            <div style={{ flexDirection: "row", display: 'inline-grid' }}>
-                <CompanyInfo/>
-                <RidePlanner/>
-                <EmailSender/>
+            <div className="contact-banner">
+                <h4 className="banner-label">Contact Information</h4>
             </div>
+
+            <div>
+                <div className="full-wide-contanct">
+                    <CompanyInfo/>
+                    <EmailSender />
+                   
+                </div>
+                <div className="full-wide-planner">
+                    <RidePlanner />
+                </div>
+            </div>
+
+            <div className="low-wide-contact">
+                <CompanyInfo />
+                <RidePlanner />
+                <EmailSender />
+            </div>
+
+
           
             <Footer/>
         </div>
