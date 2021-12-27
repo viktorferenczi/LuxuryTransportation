@@ -23,7 +23,23 @@ export const chevroletPhotoes = [
 
 export const mercedesBasicPhotoes  = [
     {
-        src: require('../../store/img/fleet/mercedes_basic/sprinter.webp').default,
+        src: require('../../store/img/fleet/mercedes_basic/mercedes_sprinter.webp').default,
+        width: 3,
+        height: 2
+    },
+    {
+        src: require('../../store/img/fleet/mercedes_basic/mercedes_sprinter_2.jpeg').default,
+        width: 3,
+        height: 2
+    },
+    {
+        src: require('../../store/img/fleet/mercedes_basic/mercedes_sprinter_interior.webp').default,
+        width: 1,
+        height: 1
+    }
+    ,
+    {
+        src: require('../../store/img/fleet/mercedes_basic/mercedes_sprinter_interior_2.webp').default,
         width: 1,
         height: 1
     }
@@ -31,25 +47,30 @@ export const mercedesBasicPhotoes  = [
 
 export const mercedesExecPhotoes   = [
     {
-        src: require('../../store/img/fleet/mercedes_premium/sprinter_executive_interior.webp').default,
-        width: 2,
-        height: 1
-    },
-    {
-        src: require('../../store/img/fleet/mercedes_premium/executive_v3.webp').default,
+        src: require('../../store/img/fleet/mercedes_premium/mercedes_sprinter_executive.jpeg').default,
         width: 3,
         height: 2
     },
     {
-        src: require('../../store/img/fleet/mercedes_premium/executive_interior_v2.webp').default,
+        src: require('../../store/img/fleet/mercedes_premium/mercedes_sprinter_executive_2.jpeg').default,
         width: 3,
         height: 2
     },
     {
-        src: require('../../store/img/fleet/mercedes_premium/executive_interior_v4.webp').default,
+        src: require('../../store/img/fleet/mercedes_premium/mercedes_sprinter_executive_3.jpeg').default,
+        width: 3,
+        height: 2
+    },
+    {
+        src: require('../../store/img/fleet/mercedes_premium/mercedes_sprinter_executive_4.webp').default,
         width: 4,
         height: 3
     },
+    {
+        src: require('../../store/img/fleet/mercedes_premium/mercedes_sprinter_executive_interior.jpeg').default,
+        width: 4,
+        height: 3
+    }
 ];
 export const lincolnPhotoes  = [
     {
