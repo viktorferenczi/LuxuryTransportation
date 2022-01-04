@@ -9,10 +9,9 @@ export const CompanyInfo = () => {
             <p>661 Ne 195th st Miami 33179</p>
             <Mailer/>
             <p>+1 (305) 606-0139</p>
-            <a style={{ color: '#b1955a' }} href='https://facebook.com'>Facebook</a>
-            <a style={{ marginLeft: '1rem', color: '#b1955a' }} href='https://facebook.com'>Google</a>
-            <a style={{ marginLeft: '1rem', color:'#b1955a' }} href='https://facebook.com'>Insta</a>
-            <a style={{ marginLeft: '1rem', color: '#b1955a' }} href='https://facebook.com'>Yelp</a>
+            <a target="_blank" className="fa fa-facebook-square fa-lg icon" aria-hidden="true" href="https://www.facebook.com/5starluxurytransportations/"></a>
+            <a target="_blank" className="fa fa-google fa-lg icon" aria-hidden="true" href="https://www.google.com/search?q=5%20Star%20Luxury%20Transportation&sxsrf=AOaemvJ5_YRvmxD3eRPY6iAtPrkm_DQQFg%3A1640026657254&ei=IdLAYbHoDsn3kwXl2JagAw&ved=2ahUKEwii6IS3h_P0AhXH_KQKHVZYBYIQrMcEegQIAhAF&uact=5&oq=5%20star%20luxury%20transportation&gs_lcp=Cgdnd3Mtd2l6EAM6BwgjELADECc6CggAEEcQsAMQyQM6BwgAEEcQsANKBAhBGABKBAhGGABQ1g5Y1g5gzxNoAnACeACAAXuIAdkBkgEDMS4xmAEAoAEByAEJwAEB&sclient=gws-wiz&ludocid=4062371511699636735&lsig=AB86z5UScHHp5OnUR9qinnXyTeMe"></a>
+            <a target="_blank" className="fa fa-map-marker fa-lg icon" aria-hidden="true" href="https://g.page/5starluxurytransportations?share"></a>
         </div>
     );
 }
