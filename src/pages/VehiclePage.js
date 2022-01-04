@@ -3,7 +3,7 @@ import { Footer } from "../components/Footer/Footer"
 import { useLocation } from "react-router";
 
 import chevrolet from './../store/img/fleet/chevrolet/chevrolet_small.png';
-import lincoln from './../store/img/fleet/lincoln/lincoln_small.png';
+import cadillac from './../store/img/fleet/cadillac/cadillac_xts_small.png';
 import mercedes_basic from './../store/img/fleet/mercedes_basic/mercedes_small.png';
 import mercedes_premium from './../store/img/fleet/mercedes_premium/mercedes_small.png';
 
@@ -24,8 +24,8 @@ export const VehiclePage = () => {
                 case "chevrolet":
                     car.imgPath = chevrolet;
                     break;
-                case "lincoln":
-                    car.imgPath = lincoln;
+                case "cadillac":
+                    car.imgPath = cadillac;
                     break;
                 case "mercedes_basic":
                     car.imgPath = mercedes_basic;
@@ -56,7 +56,7 @@ export const VehiclePage = () => {
     }
 
     return(
-        <div style={{marginTop:'9rem'}}>
+        <div style={{marginTop:'7rem'}}>
             <Header/>
             <div style={{display:'flex',flexDirection:'row'}}>
                 <PhotoGallery displayedCar={displayedCar}/>
@@ -78,7 +78,7 @@ export const VehiclePage = () => {
                     <p className={"vehicle-name"}>Equipment</p>
                     <p>{displayedCar.carInfo}</p>
                     </div>
-                    <a onClick={handleAnchorClick}>Next vehicle -&gt;</a>
+                    <a className={"next-vehicle-button"} style={{color:"#b1955a"}} onClick={handleAnchorClick}>Next vehicle -&gt;</a>
                 </div>
             </div>
             <Footer/>

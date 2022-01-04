@@ -12,7 +12,6 @@ export const Header = () => {
                 <div className="main-menu">
                     <a href={"/"} className="first-menu-item">Home</a>
                     <a href={"/fleet"} className="main-menu-item">Fleet</a>
-                    <a href={"/prices"} className="main-menu-item">Prices</a>
                     <a href={"/booking"} className="main-menu-item">Booking</a>
                     <a href={"/contact"} className="main-menu-item">Contact</a>
                     <div className="phone-number-contact">

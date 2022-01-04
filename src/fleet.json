@@ -29,10 +29,10 @@
     "4":
         {   
             "id":4,
-            "name":"LINCOLN MKZ SEDAN",
+            "name":"CADILLAC XTS",
             "year": "2020",
             "seats": "6 seats",
-            "imgPath": "lincoln",
+            "imgPath": "cadillac",
             "carInfo":"Black interior and exterior,Leather seats,6-speaker audio system,A/C,HD RadioPower outlets,auxiliary,12-volt,HDMI connections"
         }
 }

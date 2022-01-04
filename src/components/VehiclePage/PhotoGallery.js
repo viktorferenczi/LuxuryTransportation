@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { chevroletPhotoes, mercedesBasicPhotoes, mercedesExecPhotoes, lincolnPhotoes } from "../VehiclePage/photo";
+import { chevroletPhotoes, mercedesBasicPhotoes, mercedesExecPhotoes, cadillacPhotoes } from "../VehiclePage/photo";
 
 export const PhotoGallery = (props) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -33,14 +33,13 @@ export const PhotoGallery = (props) => {
         chosenCarPhotoes = mercedesExecPhotoes;
         break; 
     case 4:
-        //Lincoln
-        chosenCarPhotoes = lincolnPhotoes;
+        //Cadillac
+        chosenCarPhotoes = cadillacPhotoes;
         break; 
       default:
           break;
   }
-  console.log(chosenCarPhotoes)
-
+  
   return (
     <div>
         <div style={{width:"50rem"}}> <Gallery photos={chosenCarPhotoes} onClick={openLightbox}/></div>

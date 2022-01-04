@@ -3,7 +3,7 @@ import { Header } from "../components/Header/Header";
 import { Link } from "react-router-dom";
 
 import chevrolet from './../store/img/fleet/chevrolet/chevrolet_small.png';
-import lincoln from './../store/img/fleet/lincoln/lincoln_small.png';
+import cadillac from './../store/img/fleet/cadillac/cadillac_xts_small.png';
 import mercedes_basic from './../store/img/fleet/mercedes_basic/mercedes_small.png';
 import mercedes_premium from './../store/img/fleet/mercedes_premium/mercedes_small.png';
 
@@ -21,8 +21,8 @@ export const FleetPage = () => {
             case "chevrolet":
                 car.imgPath = chevrolet;
                 break;
-            case "lincoln":
-                car.imgPath = lincoln;
+            case "cadillac":
+                car.imgPath = cadillac;
                 break;
             case "mercedes_basic":
                 car.imgPath = mercedes_basic;
@@ -72,7 +72,7 @@ export const FleetPage = () => {
                     </div>
                 </div>
                 <div className="fleet-intruduction">
-                    <p style={{ textAlign: 'left' }}>Elegant, comfortable, executive-level style across the board, our Sedans and SUVs are all accompanied by a professional and experienced chauffeur. Vehicle makes offered include Lincoln, Mercedes, and Chevrolet. Sedans are perfect for 3-4 passengers while SUVs may accommodate up to 7 passengers.</p>
+                    <p style={{ textAlign: 'left' }}>Elegant, comfortable, executive-level style across the board, our Sedans and SUVs are all accompanied by a professional and experienced chauffeur. Vehicle makes offered include Lincoln, Cadillac, Mercedes, and Chevrolet. Sedans are perfect for 3-4 passengers while SUVs may accommodate up to 7 passengers.</p>
                     <p style={{ textAlign: 'left' }}> Some vehicles have WiFi, for specific requests or further assistance choosing the right vehicle for your needs, please call our reservations team.</p>
                 </div>
             <Footer/>

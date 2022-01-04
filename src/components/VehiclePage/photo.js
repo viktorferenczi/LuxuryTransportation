@@ -72,14 +72,24 @@ export const mercedesExecPhotoes   = [
         height: 3
     }
 ];
-export const lincolnPhotoes  = [
+export const cadillacPhotoes  = [
     {
-        src: require('../../store/img/fleet/lincoln/lincoln_interior.webp').default,
-        width: 4,
-        height: 3
+        src: require('../../store/img/fleet/cadillac/cadillac_xts.jpeg').default,
+        width: 3,
+        height: 2
     },
     {
-        src: require('../../store/img/fleet/lincoln/lincoln_interior_v2.webp').default,
+        src: require('../../store/img/fleet/cadillac/cadillac_xts_2.jpeg').default,
+        width: 3,
+        height: 2
+    },
+    {
+        src: require('../../store/img/fleet/cadillac/cadillac_xts_3.jpeg').default,
+        width: 3,
+        height: 2
+    },
+    {
+        src: require('../../store/img/fleet/cadillac/cadillac_interior.jpeg').default,
         width: 3,
         height: 2
     }

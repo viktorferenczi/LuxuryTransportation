@@ -922,3 +922,9 @@ ul {
     background-color: #37393d;
     box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
 }
+
+
+.next-vehicle-button {
+    cursor:pointer;
+    text-decoration: none;
+}

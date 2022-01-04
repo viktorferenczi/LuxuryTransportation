@@ -30,8 +30,6 @@ export const ContactPage = () => {
                 <EmailSender />
             </div>
 
-
-          
             <Footer/>
         </div>
     )

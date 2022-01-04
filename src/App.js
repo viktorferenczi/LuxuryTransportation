@@ -14,7 +14,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ContactPage } from './pages/ContactPage';
 import { FleetPage } from './pages/FleetPage';
 import { MainLandingPage } from './pages/MainLandingPage';
-import { PricesPage } from './pages/PricesPage';
 import { VehiclePage } from './pages/VehiclePage';
 import { BookingPage } from './pages/BookingPage';
 
@@ -26,7 +25,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={<MainLandingPage/>}/>
           <Route exact path="/fleet" element={<FleetPage/>}/>
-          <Route exact path="/prices" element={<PricesPage/>}/>
           <Route exact path="/vehicle" element={<VehiclePage/>}/>
           <Route exact path="/contact" element={<ContactPage/>}/>
           <Route exact path="/booking" element={<BookingPage/>}/>
