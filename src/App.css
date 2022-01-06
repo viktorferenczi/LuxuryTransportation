@@ -190,6 +190,78 @@
     box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
 }
 
+.prices-inner-div {
+    width: 50%;
+    height: 18rem;
+    display: inline-block;
+    text-align: center;
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+}
+
+.prices-inner-left {
+    margin-left: 28%
+}
+
+.prices-inner-right {
+    margin-right: 28%
+}
+
+.prices-credit-card {
+    width: 40%;
+    margin-right: 10%;
+    display: inline-block;
+    text-align: center;
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+}
+
+.prices-charge {
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+}
+
+.prices-plus-info {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.type-main-div {
+    display: inline-flex
+}
+
+.pay-hour-type {
+    background-color: rgb(55, 57, 61);
+    box-shadow: rgb(32 32 32 / 75%) 12px 12px 2px 1px;
+    width: 50%;
+    margin-right: 2rem;
+}
+
+.point-to-point-type {
+    background-color: rgb(55, 57, 61);
+    box-shadow: rgb(32 32 32 / 75%) 12px 12px 2px 1px;
+    width: 50%;
+    height: 10rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.price-div{
+    width:70%
+}
+
+.prices-row {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+
 .service-name {
     color: #b1955a;
     padding-bottom: 1rem;
@@ -221,6 +293,7 @@
     background-color:none;
     opacity: 1;
     transition: 0.3s;
+    width:80%;
 }
 
 .car-card:hover {
@@ -521,11 +594,12 @@
 
 .booking-page {
     display: inline-flex;
+    margin-bottom: 2rem
 }
 
 @media only screen and (max-width: 1325px) {
     .phone-number-contact {
-        margin-left : 2rem;
+        margin-left: 2rem;
     }
 
     .main-menu-item {
@@ -583,6 +657,14 @@
     .booking-page {
         display: inline-grid;
     }
+
+    .prices-inner-left {
+        margin-left: unset
+    }
+
+    .prices-inner-right {
+        margin-right: unset
+    }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -629,6 +711,7 @@
 
     .car-card {
         margin-bottom: 2rem;
+        margin-left: 10%;
     }
 
     .full-wide-contanct {
@@ -678,8 +761,12 @@
     .service-type-chooser {
         margin-left: 2rem;
     }
-}
 
+    .prices-inner-div {
+        margin-bottom: 2rem;
+        width: 70%
+    }
+}
 
 @media only screen and (max-width: 725px) {
     .car-chooser-div {
@@ -727,6 +814,52 @@
 
     .main-page-fleet-button-div {
         margin-top: 8rem;
+    }
+
+    .prices-row{
+        display: inline-grid;
+        margin-bottom: 0rem;
+    }
+
+    .price-div {
+        width:100%;
+    }
+
+    .prices-inner-div {
+        margin-bottom: 2rem;
+        width:60%
+    }
+
+    .type-main-div {
+        display: inline-grid
+    }
+
+    .pay-hour-type {
+        margin-left: 15%;
+        height: unset;
+        width: 70%;
+    }
+
+    .point-to-point-type {
+        margin-left: 15%;
+        margin-bottom: 2rem;
+        height: unset;
+        width: 70%;
+    }
+
+    .prices-plus-info {
+        display: inline-grid;
+    }
+
+    .prices-credit-card {
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 2rem;
+    }
+
+    .prices-charge {
+        width: 60%;
+        margin-left: 20%;
     }
 }
 
@@ -872,6 +1005,19 @@
         padding-top: 3rem
     }
 
+    .prices-inner-div {
+        width: 70%;
+    }
+
+    .prices-credit-card {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .prices-charge {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
 
 @media only screen and (max-width: 350px) {

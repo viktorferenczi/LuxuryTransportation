@@ -34,11 +34,13 @@ export const FleetPage = () => {
                 break;
         }
 
-        if (car.id > 1) {
-            imageTag = <img style={{ width: '80%', marginBottom: '0.8rem' }} alt={car.name} src={car.imgPath} />
+        if (car.id > 1 && car.id < 4) {
+            imageTag = <img style={{ width: '80%', marginBottom: '2.3rem' }} alt={car.name} src={car.imgPath} />
 
+        } else if (car.id == 4) {
+            imageTag = <img style={{ width: '80%' }} alt={car.name} src={car.imgPath} />
         } else {
-            imageTag = <img style={{ width: '80%'}} alt={car.name} src={car.imgPath} />
+            imageTag = <img style={{ width: '80%', marginBottom: '1.3rem'}} alt={car.name} src={car.imgPath} />
         }
 
         car.imageTag = imageTag;
