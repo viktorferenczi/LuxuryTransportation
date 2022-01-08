@@ -10,7 +10,6 @@ export const ChoosenService = (props) => {
             </div>
         );
     } else {
-        console.log(props)
         let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour:"2-digit", minute:"2-digit" };
         return(
             <div className="service-details">

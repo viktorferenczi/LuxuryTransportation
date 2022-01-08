@@ -83,7 +83,7 @@ export const ServiceChooser = (props) => {
             service:service.label,
             date:date
         };
-        console.log(templateParams)
+      
         
         init("user_NI2YtL4qPeOue4aib0abR");
 

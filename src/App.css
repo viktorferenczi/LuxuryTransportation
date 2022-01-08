@@ -307,6 +307,10 @@
     box-shadow: none
 }
 
+.main-page-fleet-button-div:hover > .main-page-fleet-button {
+    color: #212529
+}
+
 .fleet-div {
     display: flex;
     justify-content: space-around;
@@ -518,11 +522,12 @@
     background-color: #b1955a;
 }
 
-.submit-service-button:hover, .plan-button:hover, .send-contact-mail-button:hover {
+.submit-service-button:hover, .plan-button:hover, .send-contact-mail-button:hover, .main-page-fleet-button-div:hover {
     border-color: #b1955a;
     background-color: #b1955a;
     box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
     transition: 0.5s;
+    color:#212529
 }
 
 .fleet-banner {
@@ -595,6 +600,26 @@
 .booking-page {
     display: inline-flex;
     margin-bottom: 2rem
+}
+
+.vehicle-info {
+    margin-left: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+}
+
+.next-vehicle-button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.alert-success {
+    position: fixed;
+    right: 10px;
+    bottom: -10px;
 }
 
 @media only screen and (max-width: 1325px) {
@@ -928,9 +953,10 @@
 
     .car-mercedes-div {
         position: absolute;
-        margin-top:unset;
+        margin-top: unset;
         justify-self: end;
         z-index: -1;
+        right: -0.5rem;
     }
 
     .car-mercedes-img {
@@ -1059,18 +1085,12 @@ ul {
     color: white
 }
 
-
-.vehicle-info {
-    margin-left: 2rem;
-    justify-content: center;
-    align-items: center;
-    width: 35rem;
-    background-color: #37393d;
-    box-shadow: 12px 12px 2px 1px rgba(32, 32, 32, 0.747);
+a:hover {
+    color:white;
 }
 
-
-.next-vehicle-button {
-    cursor:pointer;
-    text-decoration: none;
+.btn-primary:focus {
+    background-color: #b1955a;
+    border-color: #b1955a;
+    box-shadow: unset;
 }
