@@ -58,7 +58,7 @@ export const VehiclePage = () => {
     return(
         <div style={{marginTop:'7rem'}}>
             <Header/>
-            <div style={{display:'flex',flexDirection:'row'}}>
+            <div className="vehicle-main-div">
                 <PhotoGallery displayedCar={displayedCar}/>
                 <div className={'vehicle-info'}>
                     <p className={"vehicle-name"} style={{fontSize:"2rem"}}>{displayedCar.name}</p>
