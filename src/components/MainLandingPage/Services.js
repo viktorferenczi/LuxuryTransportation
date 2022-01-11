@@ -85,14 +85,14 @@ export const Services = () => {
 
                 <div class="type-main-div">
                     <div className="point-to-point-type" >
-                        <h3>POINT TO POINT SERVICES</h3>
+                        <h3 style={{color: '#b1955a', paddingBottom:'2rem'}}>POINT TO POINT SERVICES</h3>
                         <p>
                             There will be two points given in this service, a starting point, and an ending point.
                             The transportation's route will be between these two locations.
                         </p>
                     </div>
                     <div className="pay-hour-type" >
-                        <h3>PAY/HOUR SERVICES</h3>
+                        <h3 style={{color: '#b1955a', paddingBottom:'2rem'}}>PAY/HOUR SERVICES</h3>
                         <p>
                             There will be one point, which will be the ending location, and the payment will be charged hourly.
                         </p>
@@ -109,8 +109,8 @@ export const Services = () => {
                     <div className="prices-row">
                         <div className="price-div">
                             <div className="prices-inner-div prices-inner-left">
-                                <h3>Chevrolet Suburban</h3>
-                                <h3>(seats 1-6)</h3>
+                                <h3 style={{ color: '#b1955a' }}>Chevrolet Suburban</h3>
+                                <h4 style={{ paddingBottom:'2rem' }}>(seats 1-6)</h4>
                                 <p>
                                     Point to Point (Miami to Miami) - $165
                                 </p>
@@ -125,8 +125,8 @@ export const Services = () => {
 
                         <div className="price-div">
                             <div className="prices-inner-div prices-inner-right">
-                                <h3>Mercedes Sprinter Executive</h3>
-                                <h3>(seats 1-13)</h3>
+                                <h3 style={{ color: '#b1955a' }}>Mercedes Sprinter Executive</h3>
+                                <h4 style={{ paddingBottom:'2rem' }}>(seats 1-13)</h4>
                                 <p>
                                     Point to Point (Miami to Miami) - $195
                                 </p>
@@ -142,8 +142,8 @@ export const Services = () => {
                     <div className="prices-row">
                         <div className="price-div">
                             <div className="prices-inner-div prices-inner-left">
-                                <h3>Mercedes Sprinter</h3>
-                                <h3>(seats 1-13)</h3>
+                                <h3 style={{ color: '#b1955a' }}>Mercedes Sprinter</h3>
+                                <h4 style={{ paddingBottom:'2rem' }}>(seats 1-13)</h4>
                                 <p>
                                     Point to Point (Miami to Miami) - $175
                                 </p>
@@ -158,8 +158,8 @@ export const Services = () => {
 
                         <div className="price-div">
                             <div className="prices-inner-div prices-inner-right">
-                                <h3>Cadillac XTS</h3>
-                                <h3>(seats 1-3)</h3>
+                                <h3 style={{ color: '#b1955a' }}>Cadillac XTS</h3>
+                                <h4 style={{ paddingBottom:'2rem' }}>(seats 1-3)</h4>
                                 <p>
                                     Point to Point (Miami to Miami) - $135
                                 </p>
@@ -176,7 +176,7 @@ export const Services = () => {
 
                 <div className="prices-plus-info">
                     <div className="prices-credit-card">
-                        <h3>Credit Card Payment Accepted!</h3>
+                        <h3 style={{ color: '#b1955a', paddingBottom:'3rem' }}>Credit Card Payment Accepted!</h3>
                         <div>
                             <div>
                                 <p>
@@ -188,7 +188,7 @@ export const Services = () => {
                     </div>
 
                     <div className="prices-charge">
-                        <h3>WE WILL CHARGE EXTRA COST IN THE FOLLOWING SITUATIONS:</h3>
+                        <h4 style={{ color: '#b1955a', textAlign:'center' }}>WE WILL CHARGE EXTRA COST IN THE FOLLOWING SITUATIONS:</h4>
                         <p>
                             - If the location is an Airport(+10$) + parking if it's inside pickup!
                         </p>
