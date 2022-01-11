@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback , useEffect} from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { chevroletPhotoes, mercedesBasicPhotoes, mercedesExecPhotoes, cadillacPhotoes } from "../VehiclePage/photo";
@@ -6,6 +6,19 @@ import { chevroletPhotoes, mercedesBasicPhotoes, mercedesExecPhotoes, cadillacPh
 export const PhotoGallery = (props) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  const [windowDimensions, setWindowDimensions] = useState(null);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+  }, []);
+
+  const handleResize = () => {
+    setWindowDimensions(getWindowDimensions());
+  }
+
+  const getWindowDimensions = () => {
+    return window.innerWidth;
+  }
 
   const openLightbox = useCallback((event, { photo, index }) => {
     setCurrentImage(index);
@@ -42,7 +55,12 @@ export const PhotoGallery = (props) => {
   
   return (
     <div>
+      {windowDimensions < 1050 ?  // ez a width, itt állítható, hogy mikortól legyen 1 kép csak
+        <img onClick={ (event) => openLightbox(event,{photo:0,index:0})} width={400} height={300} src={chosenCarPhotoes[0].src}></img>
+      :
         <div style={{width:"50rem"}}> <Gallery photos={chosenCarPhotoes} onClick={openLightbox}/></div>
+      }
+
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
