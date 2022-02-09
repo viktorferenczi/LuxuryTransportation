@@ -78,6 +78,17 @@
     font-weight: 700;
 }
 
+.contact-email {
+    color: white;
+    background-color: #b1955a;
+    width: 14rem;
+    height: 3rem;
+    margin-right: 3rem;
+    border-radius: 4rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
 .social-div {
     display: contents;
 }
@@ -245,7 +256,7 @@
     background-color: rgb(55, 57, 61);
     box-shadow: rgb(32 32 32 / 75%) 12px 12px 2px 1px;
     width: 50%;
-    height: 10rem;
+    height: 13rem;
     margin-right: 2rem;
     margin-left: 2rem;
 }
@@ -599,7 +610,7 @@
 
 .booking-page {
     display: inline-flex;
-    margin-bottom: 16.7rem
+    margin-bottom: 4rem
 }
 
 .vehicle-info {
@@ -630,8 +641,17 @@
 
 .vehicle-main-div {
     display: flex;
-    margin-bottom: 12.6rem
+    margin-bottom: 4rem
 }
+
+.footer-social-div {
+    display:none;
+}
+
+.description {
+    width: 90%;
+    margin-left: 5%;
+} 
 
 @media only screen and (max-width: 1325px) {
     .phone-number-contact {
@@ -777,7 +797,7 @@
     }
 
     .vehicle-main-div {
-        margin-bottom: 19.5rem
+        margin-bottom: 4rem
     }
 }
 
@@ -917,6 +937,10 @@
         margin-left: 5%;
         width: 90%
     }
+
+    .mercedes-executive {
+        padding-bottom : 2rem;
+    }
 }
 
 @media only screen and (max-width: 625px) {
@@ -928,9 +952,7 @@
 
 
 @media only screen and (max-width: 500px) {
-    .email {
-        display: none;
-    }
+  
 
     .email-icon {
         position: absolute;
@@ -939,8 +961,7 @@
     }
 
     .social-div {
-        top: 4rem;
-        left: 38%;
+      display:none
     }
 
     .logo-image {
@@ -969,7 +990,8 @@
     }
     
     .service-inner-div {
-        width:80%
+        width:80%;
+        height: 15rem
     }
 
     .service-row {
@@ -1074,6 +1096,10 @@
     .prices-charge {
         width: 80%;
         margin-left: 10%;
+    }
+
+    .footer-social-div {
+        display: block;
     }
 }
 

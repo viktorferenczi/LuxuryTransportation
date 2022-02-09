@@ -70,7 +70,7 @@ export const EmailSender = () => {
         <div style={{ marginTop: '2rem', marginBottom: '2rem' }}>
             <Alert show={show} variant="success">
                 <Alert.Heading>Email Sent</Alert.Heading>
-                <p>Thank you for your letter. We will contact you as soon as possible.</p>
+                <p style={{color: 'black' }} >Thank you for your letter. We will contact you as soon as possible.</p>
                 <hr />
                 <div className="d-flex justify-content-end">
                     <Button onClick={() => setShow(false)} variant="outline-success">

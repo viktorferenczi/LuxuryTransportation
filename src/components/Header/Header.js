@@ -20,8 +20,7 @@ export const Header = () => {
                             (305) 606-0139
                         </p>
                     </div>
-                    <div>
-
+                    <div className="contact-email">
                         <a style={{ textDecoration: 'unset' }} target="_blank" href={`mailto:fivestar-inc@hotmail.com?subject=Contact&body=Your message...`}> <p className="email" >fivestar-inc@hotmail.com</p></a>
                     </div>
                 </div>
@@ -42,7 +41,7 @@ export const Header = () => {
                     </div>
                    
                     <div className="social-div" >
-                        <div>
+                        <div className="contact-email">
                             <a style={{ textDecoration: 'unset' }} target="_blank" href={`mailto:fivestar-inc@hotmail.com?subject=Contact&body=Your message...`}> <p className="email" >fivestar-inc@hotmail.com</p></a>
                         </div>
                     </div>
