@@ -228,7 +228,7 @@
 }
 
 .prices-charge {
-    width: 45%;
+    width: 40%;
     display: inline-block;
     text-align: left;
     background-color: #37393d;
@@ -610,7 +610,8 @@
 
 .booking-page {
     display: inline-flex;
-    margin-bottom: 4rem
+    margin-top: 6rem;
+    margin-bottom: 12rem
 }
 
 .vehicle-info {
@@ -640,8 +641,10 @@
 }
 
 .vehicle-main-div {
+    margin-top:15rem;
+    margin-left: 15%;
     display: flex;
-    margin-bottom: 4rem
+    margin-bottom: 15rem
 }
 
 .footer-social-div {
@@ -797,6 +800,7 @@
     }
 
     .vehicle-main-div {
+        margin-left:0%;
         margin-bottom: 4rem
     }
 }
@@ -924,6 +928,7 @@
     }
 
     .vehicle-main-div {
+        margin-top: 11rem;
         display: inline-grid
     }
 
