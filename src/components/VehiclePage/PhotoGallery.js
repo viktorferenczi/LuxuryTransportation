@@ -55,7 +55,7 @@ export const PhotoGallery = (props) => {
   
   return (
     <div>
-          {windowDimensions < 1100 ?  // ez a width, itt állítható, hogy mikortól legyen 1 kép csak
+          {window.innerWidth < 1100 ?  // ez a width, itt állítható, hogy mikortól legyen 1 kép csak
               <img onClick={(event) => openLightbox(event, { photo: 0, index: 0 })} className="main-car-img" src={chosenCarPhotoes[0].src}></img>
       :
         <div style={{width:"50rem"}}> <Gallery photos={chosenCarPhotoes} onClick={openLightbox}/></div>
