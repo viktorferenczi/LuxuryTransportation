@@ -80,7 +80,7 @@ export const Services = () => {
                    
                     <div className="service-inner-div" style={{ marginTop: '1.5rem' }}>
                         <img className="service-icon-image" src={servicePromotionAndNegotiationIcon} /> 
-                        <h5 className="service-name" >PROMOTIONS, NEOGITATIONS</h5>
+                        <h5 className="service-name" >PROMOTIONS, NEGOTIATIONS</h5>
                         <div className="description">
                             <p>   
                                  A good bachelorette party must have a luxury car. Drinks, good music, huge party, your best friends. Warning: Great memories, do not miss it!

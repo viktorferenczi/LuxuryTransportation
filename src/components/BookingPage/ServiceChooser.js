@@ -35,7 +35,7 @@ export const ServiceChooser = (props) => {
         { value: 'cs', label: 'Chevrolet Suburban' },
         { value: 'mse', label: 'Mercedes Sprinter Executive' },
         { value: 'ms', label: 'Mercedes Sprinter' },
-        { value: 'lms', label: 'Lincoln MKZ Sedan' },
+        { value: 'lms', label: 'Cadillac XTS' },
     ];
 
     const onChangeHandler = (event,type) =>{

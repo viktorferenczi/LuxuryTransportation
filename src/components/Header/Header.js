@@ -33,7 +33,6 @@ export const Header = () => {
                         <div class="dropdown-content">
                             <a href={"/"} className="first-menu-item">Home</a>
                             <a href={"/fleet"} className="main-menu-item">Fleet</a>
-                            <a href={"/prices"} className="main-menu-item">Prices</a>
                             <a href={"/booking"} className="main-menu-item">Booking</a>
                             <a href={"/contact"} className="main-menu-item">Contact</a>
                         </div>
