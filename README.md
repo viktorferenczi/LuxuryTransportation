@@ -1,12 +1,14 @@
-# Luxury Transportation Miami web
+# 5 Star Luxury Transportation Miami webapp
 
-Readme verison: 1.0.0.   Last edited: 2021.11.10.
+www.5star-transportation.com
+
+Readme verison: 1.0.1.   Last edited: 2022.03.01.
 
 ## Devs
 
 
-- Viktor Ferenczi (ferencziviktor@icloud.com)
-- Fehér Attila (feher.attila96@gmail.com)
+- Viktor Ferenczi
+- Attila Feher
 
 
 
