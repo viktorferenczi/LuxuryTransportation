@@ -6,6 +6,7 @@ Readme verison: 1.0.0.   Last edited: 2021.11.10.
 
 
 - Viktor Ferenczi (ferencziviktor@icloud.com)
+- Fehér Attila (feher.attila96@gmail.com)
 
 
 
