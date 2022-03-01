@@ -1,7 +1,5 @@
 # 5 Star Luxury Transportation Miami webapp
 
-www.5star-transportation.com
-
 Readme verison: 1.0.1.   Last edited: 2022.03.01.
 
 ## Devs
