@@ -74,7 +74,7 @@ export const FleetPage = () => {
                     </div>
                 </div>
                 <div className="fleet-intruduction">
-                    <p style={{ textAlign: 'left' }}>Elegant, comfortable, executive-level style across the board, our Sedans and SUVs are all accompanied by a professional and experienced chauffeur. Vehicle makes offered include Lincoln, Cadillac, Mercedes, and Chevrolet. Sedans are perfect for 3-4 passengers while SUVs may accommodate up to 7 passengers.</p>
+                    <p style={{ textAlign: 'left' }}>Elegant, comfortable, executive-level style across the board, our Sedans and SUVs are all accompanied by a professional and experienced chauffeur. Vehicle makes offered include Lincoln, Cadillac, Mercedes, and Chevrolet. Sedans are perfect for 3 passengers while SUVs may accommodate up to 6 passengers.</p>
                     <p style={{ textAlign: 'left' }}> Some vehicles have WiFi, for specific requests or further assistance choosing the right vehicle for your needs, please call our reservations team.</p>
                 </div>
             <Footer/>
