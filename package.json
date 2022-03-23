@@ -1,6 +1,8 @@
 {
   "name": "luxury_transportation_miami",
-  "version": "0.1.0",
+  "homepage": "http://5star-transportation.com",
+  "version": "1.0.0",
+  "description": "5 Star Luxury Transportation",
   "contributors": [
     "Ferenczi Viktor"
   ],
