@@ -8,6 +8,7 @@ import mercedes_basic from './../store/img/fleet/mercedes_basic/mercedes_small.p
 import mercedes_premium from './../store/img/fleet/mercedes_premium/mercedes_small.png';
 
 import cars from '../fleet.json';
+import Helmet from "react-helmet";
 
 export const FleetPage = () => {
 
@@ -64,7 +65,16 @@ export const FleetPage = () => {
 
     return (
         <div>
-            <Header />
+            <Helmet>
+                <title>5 Star Luxury Transportation - Luxury vehicles for your needs!</title>
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="theme-color" content="#000000" />
+                <meta name="robots" content="index,follow"/>
+                <meta name="description" content="Well equipped and luxury vehicles, 3-12 seats vehicles to choose from! Take a look at our fleet!" />
+                <meta name="keywords" content="luxury transportation, limo service, limousine service, luxury transportation Miami, limo service Miami, transportation service Miami, luxury transport fleet, transport fleet, limo fleet"></meta>       
+            </Helmet>
+            <Header/>
             <div style={{ marginTop: "6rem" }}>
                 <div className="fleet-banner">
                     <h4 className="banner-label">5 Star Fleet</h4>

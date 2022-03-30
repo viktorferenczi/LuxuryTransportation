@@ -1,13 +1,16 @@
 import logo from '../../store/img/logo.png';
 import '../../App.css';
 
-export const Header = () => {
+export const Header = (props) => {
+
     return (
         <div>
             <header className="header" >
 
                 <div className="logo-image-div">
-                    <img className="logo-image" src={logo} alt="Logo" />
+                    <a href='/'>
+                        <img className="logo-image" src={logo} alt="Logo" />
+                    </a>
                 </div>
                 <div className="main-menu">
                     <a href={"/"} className="first-menu-item">Home</a>

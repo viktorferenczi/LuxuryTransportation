@@ -9,6 +9,7 @@ import mercedes_premium from './../store/img/fleet/mercedes_premium/mercedes_sma
 
 import fleet from '../fleet.json';
 import { PhotoGallery } from "../components/VehiclePage/PhotoGallery";
+import Helmet from "react-helmet";
 
 export const VehiclePage = () => {
     const location = useLocation()
@@ -57,7 +58,16 @@ export const VehiclePage = () => {
 
     return(
         <div style={{marginTop:'7rem'}}>
-            <Header/>
+            <Helmet>
+                <title>5 Star Luxury Transportation - Choose your luxury vehicle!</title>
+                <meta charset="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="theme-color" content="#000000" />
+                <meta name="robots" content="index,follow"/>
+                <meta name="description" content="Take a look at our well equipped luxury car! Book it easily and enjoy your ride!" />
+                <meta name="keywords" content="luxury transportation, limo service, limousine service, luxury transportation Miami, limo service Miami, transportation service Miami"></meta>
+            </Helmet>
+            <Header location="vehicle"/>
             <div className="vehicle-main-div">
                 <PhotoGallery displayedCar={displayedCar}/>
                 <div className={'vehicle-info'}>
