@@ -20,8 +20,7 @@ export const Footer = () => {
             </div>
            
             <div>
-                <p style={{ color: 'white' }}>© 2021 5 Star Luxury Transportation. All Rights Reserved.</p>
-                <p style={{ color: "grey", marginBottom: "0" }}>AVSoftware</p>
+                <p style={{ color: 'white', marginBottom: "0" }}>© 2022 5 Star Luxury Transportation. All Rights Reserved.</p>
             </div>
             <div>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>

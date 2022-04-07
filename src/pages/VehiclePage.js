@@ -10,6 +10,11 @@ import mercedes_premium from './../store/img/fleet/mercedes_premium/mercedes_sma
 import fleet from '../fleet.json';
 import { PhotoGallery } from "../components/VehiclePage/PhotoGallery";
 import Helmet from "react-helmet";
+import { Button } from '@mui/material';
+
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 
 export const VehiclePage = () => {
     const location = useLocation()
@@ -46,15 +51,23 @@ export const VehiclePage = () => {
         window.location.href = "/";
     }
 
-    const handleAnchorClick = () => {
+    const handleNextButton = () => {
         let intCarId = parseInt(carId);
-        
-        if(intCarId+1 == 5) {
-            window.location= "/vehicle?id=1";
-        } else {
-            window.location= "/vehicle?id=" + (intCarId+1);
-        }
+        window.location= "/vehicle?id=" + (intCarId+1);
     }
+
+    const handlePrevButton = () => {
+        let intCarId = parseInt(carId);
+        window.location= "/vehicle?id=" + (intCarId-1);
+    }
+
+    const handleBooking = () => {
+        window.location = "/booking?id=" + carId;
+    }
+
+    const listItems = displayedCar.carInfo.split("-").map((element) =>
+        <p>{element}</p> 
+    );
 
     return(
         <div style={{marginTop:'7rem'}}>
@@ -70,26 +83,37 @@ export const VehiclePage = () => {
             <Header location="vehicle"/>
             <div className="vehicle-main-div">
                 <PhotoGallery displayedCar={displayedCar}/>
-                <div className={'vehicle-info'}>
-                    <p className={"vehicle-name"} style={{fontSize:"2rem"}}>{displayedCar.name}</p>
+                <Card className="vehicle-info" sx={{backgroundColor:"#37393d"}}>
+                    <CardContent>
+                        <p className={"vehicle-name"} style={{fontSize:"2rem"}}>{displayedCar.name}</p>
 
-                    <div style={{display:'flex',flexDirection:'column'}}>
-                    <p className={"vehicle-name"}>Year</p>
-                    <p>{displayedCar.year}</p>
-                    </div>
+                        <div style={{display:'flex',flexDirection:'column'}}>
+                            <p className={"vehicle-name"}>Year</p>
+                            <p>{displayedCar.year}</p>
+                        </div>
 
-                    
-                    <div style={{display:'flex',flexDirection:'column'}}>
-                    <p className={"vehicle-name"}>Seats</p>
-                    <p> {displayedCar.seats}</p>
-                    </div>
 
-                    <div style={{display:'flex',flexDirection:'column'}}>
-                    <p className={"vehicle-name"}>Equipment</p>
-                    <p>{displayedCar.carInfo}</p>
-                    </div>
-                    <a className={"next-vehicle-button"} style={{color:"#b1955a"}} onClick={handleAnchorClick}>Next vehicle -&gt;</a>
-                </div>
+                        <div style={{display:'flex',flexDirection:'column'}}>
+                            <p className={"vehicle-name"}>Seats</p>
+                            <p> {displayedCar.seats}</p>
+                        </div>
+
+                        <div style={{display:'flex',flexDirection:'column'}}>
+                            <p className={"vehicle-name"}>Equipment</p>
+                           
+                            {listItems}
+                        </div>
+                    </CardContent>
+
+                    <CardActions style={{justifyContent:'center'}}>
+                        
+                        {carId != 1 ? <Button onClick={handlePrevButton}  variant="contained" style={{backgroundColor:'#b1955a'}}>Previous vehicle</Button> : <></> }
+                        {carId != 4 ? <Button onClick={handleNextButton}  variant="contained" style={{backgroundColor:'#b1955a'}}>Next vehicle</Button> : <></> }  
+                        
+                       
+                        <Button onClick={handleBooking}  variant="contained" style={{backgroundColor:'green'}}>Book this vehicle</Button>
+                    </CardActions>
+                </Card>
             </div>
             <Footer/>
         </div>

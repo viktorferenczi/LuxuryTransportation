@@ -6,7 +6,7 @@ export const ChoosenService = (props) => {
         return(
             <div className="service-details">
               <h2>Your selected service details</h2>
-              <p>You have no selected service yet.</p>
+              <p>You have not selected a service yet.</p>
             </div>
         );
     } else {
@@ -21,7 +21,7 @@ export const ChoosenService = (props) => {
             }
            
             { props.service ?  
-                 <p>Service type: {props.service.label}</p>
+                 <p>Service: {props.service.label}</p>
             : 
                 <p>Please select a service.</p>
             }

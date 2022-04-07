@@ -19,7 +19,7 @@ export const ContactPage = () => {
             </Helmet>
             <Header/>
             <div className="contact-banner">
-                <h4 className="banner-label">Contact Information</h4>
+                <h4 className="banner-label">Contact</h4>
             </div>
 
             <div>

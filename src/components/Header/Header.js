@@ -19,7 +19,7 @@ export const Header = (props) => {
                     <a href={"/contact"} className="main-menu-item">Contact</a>
                     <div className="phone-number-contact">
                         <p className="contact">
-                            <i class="fa fa-phone phone-icon" aria-hidden="true"></i>
+                            <i className="fa fa-phone phone-icon" aria-hidden="true"></i>
                             (305) 606-0139
                         </p>
                     </div>
@@ -30,10 +30,10 @@ export const Header = (props) => {
 
                 <div className="hamburger-menu" >
                     <div>
-                        <div class="center">
+                        <div className="center">
                             <div></div>
                         </div>
-                        <div class="dropdown-content">
+                        <div className="dropdown-content">
                             <a href={"/"} className="first-menu-item">Home</a>
                             <a href={"/fleet"} className="main-menu-item">Fleet</a>
                             <a href={"/booking"} className="main-menu-item">Booking</a>

@@ -52,13 +52,15 @@ export const FleetPage = () => {
     
     const listItems = carList.map((car) =>
         <div key={car.name} className="car-card">
-            {car.imageTag}
-            <p>{car.name}</p>
-            <p>{car.year} - {car.seats}</p>
-            <Link className="btn more-info-button"
+            <Link
                 to={`/vehicle?id=${car.id}`}
                 state={{ car }}
-            >More Info</Link>
+                style={{ textDecoration: 'none' }}
+            >            
+                {car.imageTag}
+                <p>{car.name}</p>
+                <p>{car.year} - {car.seats}</p>
+            </Link>
         </div>
     );
 
@@ -75,10 +77,8 @@ export const FleetPage = () => {
                 <meta name="keywords" content="luxury transportation, limo service, limousine service, luxury transportation Miami, limo service Miami, transportation service Miami, luxury transport fleet, transport fleet, limo fleet"></meta>       
             </Helmet>
             <Header/>
-            <div style={{ marginTop: "6rem" }}>
-                <div className="fleet-banner">
-                    <h4 className="banner-label">5 Star Fleet</h4>
-                </div>
+            <div style={{ marginTop: "10rem" }}>
+                
                 <div className="fleet-div">
                         {listItems}
                     </div>

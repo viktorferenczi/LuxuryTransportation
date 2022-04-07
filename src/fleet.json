@@ -6,7 +6,7 @@
             "year": "2020",
             "seats": "6 seats",
             "imgPath": "chevrolet",
-            "carInfo":"This model has a black interior and exterior, with good quality leather seats. Has Bluetooth connection, and the customer even has Wi-Fi access. For the sound, the built in 6-speaker audio system gives magnificent audio. This vehicle has HD RadioPower outlets and 5 auxiliary. 12-volt connection and HDMI connection. The vehicle has cold freezing A/C for the hot days."
+            "carInfo":"Black interior and exterior-Leather seats-Bluetooth connection-Wifi access-Built in 6 speaker audio system-HD RadioPower outlets and 5 auxiliary-12V connection and HDMI connection-Cold freezing A/C"
         },
     "2":
         {
@@ -15,7 +15,7 @@
             "year": "2020",
             "seats": "6 seats",
             "imgPath":"mercedes_basic",
-            "carInfo":"This model has a black interior and exterior, with good quality leather seats. Has Bluetooth connection, and the customer even has Wi-Fi access. High end sound system for the best quality. Wood floors,Reclining leather captain chairs Maybach,Disco lighting,Ceiling and lighting aux connections,110v and 12v throughout,HDMI connection,Freezing cold A/C,RGB,Large ice cooler"
+            "carInfo":"-Black interior and exterior-Good quality leather seats-Bluetooth connection-Wifi access-High end sound system-Wood floors-Reclining leather captain chairs Maybach-Disco lighting-Ceiling and lighting-Aux connections-110v and 12v throughout-HDMI connection-Freezing cold A/C-RGB-Large ice cooler"
         },
     "3":
         {   
@@ -24,7 +24,7 @@
             "year": "2020",
             "seats": "13 seats",
             "imgPath":"mercedes_premium",
-            "carInfo":"This model has a black interior and exterior, with an available Wi-Fi connection and Bluetooth capability.High end sound system for the best experience. The comfort of wood floors and reclining leather captain chairs Maybach. Disco lighting. Ceiling and lighting aux connections for customers. 110V and 12V throughout. HDMI connection for displays. And for the hot days, freezing cold A/C and large ice cooler!"
+            "carInfo":"Black interior and exterior-Wifi connection-Bluetooth capabilit-High end sound system-The comfort of wood floors-Reclining leather seats-Disco lighting-Ceiling and lighting-Aux connections-110V and 12V throughout-HDMI connection-Freezing cold A/C and large ice cooler"
         },
     "4":
         {   
@@ -33,6 +33,6 @@
             "year": "2020",
             "seats": "6 seats",
             "imgPath": "cadillac",
-            "carInfo":"This modal has a black interior and exterior, leather seats and 6-speaker audio system for the best quality. A/C for the hot days. HD RadioPower outlets, auxiliary, 12V HDMI connections for the customers."
+            "carInfo":"Black interior and exterior-Leather seats-6 speaker audio system-A/C-HD RadioPower outlets-Auxiliary-12V-HDMI connections"
         }
 }

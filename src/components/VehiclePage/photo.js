@@ -24,37 +24,37 @@ export const chevroletPhotoes = [
 export const mercedesBasicPhotoes  = [
     {
         src: require('../../store/img/fleet/mercedes_basic/mercedes_sprinter.webp').default,
-        width: 3,
-        height: 2
+        width: 4,
+        height: 3
     },
     {
         src: require('../../store/img/fleet/mercedes_basic/mercedes_sprinter_2.jpeg').default,
-        width: 3,
-        height: 2
+        width: 4,
+        height: 3
     },
     {
         src: require('../../store/img/fleet/mercedes_basic/mercedes_sprinter_interior.webp').default,
-        width: 1,
-        height: 1
+        width: 9,
+        height: 5
     }
     ,
     {
         src: require('../../store/img/fleet/mercedes_basic/mercedes_sprinter_interior_2.webp').default,
-        width: 1,
-        height: 1
+        width: 4,
+        height: 3
     }
 ];
 
 export const mercedesExecPhotoes   = [
     {
         src: require('../../store/img/fleet/mercedes_premium/mercedes_sprinter_executive.jpeg').default,
-        width: 3,
-        height: 2
+        width: 4,
+        height: 3
     },
     {
         src: require('../../store/img/fleet/mercedes_premium/mercedes_sprinter_executive_2.jpeg').default,
-        width: 3,
-        height: 2
+        width: 4,
+        height: 3
     },
     {
         src: require('../../store/img/fleet/mercedes_premium/mercedes_sprinter_executive_3.jpeg').default,
@@ -69,7 +69,7 @@ export const mercedesExecPhotoes   = [
     {
         src: require('../../store/img/fleet/mercedes_premium/mercedes_sprinter_executive_interior.jpeg').default,
         width: 4,
-        height: 3
+        height: 4
     }
 ];
 export const cadillacPhotoes  = [

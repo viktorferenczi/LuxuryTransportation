@@ -3,9 +3,7 @@ import '../../App.css';
 export const FounderInfo = () => {
     return (
         <div className="founder-info" >
-            <div className="main-banner">
-                <h1 className="banner-label">Reliability, safety, style</h1>
-            </div>
+          
            
             <div className="founder-infos">
                     <div className="intruduction">

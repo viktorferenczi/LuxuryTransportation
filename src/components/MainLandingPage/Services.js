@@ -94,7 +94,7 @@ export const Services = () => {
 
                 <h1 style={{color: '#b1955a', paddingBottom:'1rem' }}>SERVICE TYPES</h1>
 
-                <div class="type-main-div">
+                <div className="type-main-div">
                     <div className="point-to-point-type" >
                         <h3 className="service-name" style={{ paddingBottom: '2rem' }}>POINT TO POINT SERVICES</h3>
                         <div className="description">
