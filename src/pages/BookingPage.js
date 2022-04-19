@@ -5,6 +5,7 @@ import { ChoosenService } from "../components/BookingPage/ChoosenService";
 
 import { useState } from "react";
 import Helmet from "react-helmet";
+import { Terms } from "../components/BookingPage/Terms";
  
 export const BookingPage = () => {
 
@@ -14,6 +15,7 @@ export const BookingPage = () => {
     const [date,setDate] = useState("");
 
     return(
+        <>
         <div style={{marginTop:"5rem"}}>
             <Helmet>
                 <title>5 Star Luxury Transportation - Book your luxury or limousine service!</title>
@@ -39,7 +41,9 @@ export const BookingPage = () => {
                     />
                 </div>
             </div>
-           <Footer/>
         </div>
+        <Terms/> 
+        <Footer/>
+        </>
     )
 }

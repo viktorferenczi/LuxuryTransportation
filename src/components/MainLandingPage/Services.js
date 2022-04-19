@@ -134,7 +134,7 @@ export const Services = () => {
                                         Point to Point (Miami to Broward) - $185
                                     </p>
                                     <p>
-                                            Pay/Hour - $85/h
+                                        Pay/Hour - $85/h (min. 3 hours)
                                     </p>
                                 </div>
                             </div>

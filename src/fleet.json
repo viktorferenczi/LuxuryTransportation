@@ -13,7 +13,7 @@
             "id":2,
             "name":"MERCEDES SPRINTER",
             "year": "2020",
-            "seats": "6 seats",
+            "seats": "13 seats",
             "imgPath":"mercedes_basic",
             "carInfo":"-Black interior and exterior-Good quality leather seats-Bluetooth connection-Wifi access-High end sound system-Wood floors-Reclining leather captain chairs Maybach-Disco lighting-Ceiling and lighting-Aux connections-110v and 12v throughout-HDMI connection-Freezing cold A/C-RGB-Large ice cooler"
         },
@@ -31,7 +31,7 @@
             "id":4,
             "name":"CADILLAC XTS",
             "year": "2020",
-            "seats": "6 seats",
+            "seats": "3 seats",
             "imgPath": "cadillac",
             "carInfo":"Black interior and exterior-Leather seats-6 speaker audio system-A/C-HD RadioPower outlets-Auxiliary-12V-HDMI connections"
         }

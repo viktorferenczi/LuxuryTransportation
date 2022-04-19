@@ -489,9 +489,19 @@
     padding: 3rem;
     border-radius: 5px;
     margin-top: 3rem;
-    margin-bottom: 3rem;
     box-shadow: rgb(32 32 32 / 75%) 12px 12px 2px 1px;
     background-color: rgb(55, 57, 61);
+}
+
+.term-details {
+    display: inline-grid;
+    justify-content: center;
+    width: 95%;
+    background-color: #37393d;
+    box-shadow: 12px 12px 2px 1px rgb(32 32 32 / 75%);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 6rem;
 }
 
 .service-chooser-main-div {
@@ -623,7 +633,7 @@
 .booking-page {
     display: inline-flex;
     margin-top: 6rem;
-    margin-bottom: 12rem
+    margin-bottom: 5rem
 }
 
 .vehicle-info {
