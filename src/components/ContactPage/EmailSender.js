@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 
 import{ init } from 'emailjs-com';
 import emailjs from 'emailjs-com';
-import Alert from 'react-bootstrap/Alert';
-import Button from 'react-bootstrap/Button'
 
+import Alert from 'react-bootstrap/Alert';
+import { Button } from '@mui/material';
+import TextField from '@mui/material/TextField';
 
 export const EmailSender = () => {
 
@@ -48,12 +49,11 @@ export const EmailSender = () => {
     const handleSubmit = (e) => {
         
         e.preventDefault(); // Prevents default refresh by the browser
-
         const templateParams = {
-            name:e.target.name.value,
-            phone:e.target.phone.value,
-            email:e.target.email.value,
-            message:e.target.message.value
+            name:name,
+            phone:phone,
+            email:email,
+            message:message
         };
         
         init("user_NI2YtL4qPeOue4aib0abR");
@@ -68,9 +68,9 @@ export const EmailSender = () => {
 
     return (
         <div style={{ marginTop: '2rem', marginBottom: '2rem' }}>
-            <Alert show={show} variant="success">
+            <Alert show={show} variant="success" style={{zIndex:3}}>
                 <Alert.Heading>Email Sent</Alert.Heading>
-                <p style={{color: 'black' }} >Thank you for your letter. We will contact you as soon as possible.</p>
+                <p style={{color: 'black' }} >Thank you for your message. We will contact you as soon as possible.</p>
                 <hr />
                 <div className="d-flex justify-content-end">
                     <Button onClick={() => setShow(false)} variant="outline-success">
@@ -80,19 +80,51 @@ export const EmailSender = () => {
             </Alert>
            
             <form onSubmit={handleSubmit} style={{ flexDirection: 'column', display: 'flex' }}>
-                <label className="emailsend-label" style={{ color: 'white', textAlign: 'left' }} htmlFor={"name"}>Full Name*</label>
-                <input className="emailsend-input" onChange={ (e) => handleChange(e,"name")} required type="text" id="name" name="name" value={name} placeholder={"Your name"}/>
+            <TextField sx={{
+        svg: { color: 'white' },
+        input: { color: 'white' },
+        label: { color: '#b1955a' },
+        marginTop:1,
+        width:"16rem"
+      }} id="outlined-basic" label="Name" variant="outlined" onChange={(e)=>handleChange(e,"name")}  value={name} />
+            
+            <TextField sx={{
+        svg: { color: 'white' },
+        input: { color: 'white' },
+        label: { color: '#b1955a' },
+        marginTop:1,
+        width:"16rem"
+      }} type="email" id="outlined-basic" label="Email" variant="outlined" onChange={(e)=>handleChange(e,"email")}  value={email} />
 
-                <label className="emailsend-label" style={{ color: 'white', textAlign: 'left' }} htmlFor={"email"}>Email*</label>
-                <input className="emailsend-input" onChange={ (e) => handleChange(e,"email")} required type="email" id="email" name="email" value={email} placeholder={"Your email"}/>
 
-                <label className="emailsend-label" style={{ color: 'white', textAlign: 'left' }} htmlFor={"phone"}>Phone number*</label>
-                <input className="emailsend-input" onChange={ (e) => handleChange(e,"phone")} required type="text" id="phone" name="phone" value={phone} placeholder={"Your phone number"}/>
+<TextField sx={{
+        svg: { color: 'white' },
+        input: { color: 'white' },
+        label: { color: '#b1955a' },
+        marginTop:1,
+        width:"16rem"
+      }} id="outlined-basic" label="Phone" variant="outlined" onChange={(e)=>handleChange(e,"phone")}  value={phone} />
 
-                <label className="emailsend-label" style={{ color: 'white', textAlign: 'left' }} htmlFor={"message"}>Message*</label>
-                <textarea className="emailsend-input" onChange={ (e) => handleChange(e,"message")} required type="text" id="message" name="message" value={message} placeholder={"Your message"}/>
 
-                <Button className="send-contact-mail-button" type={"submit"}>Send</Button>
+<TextField
+sx={{
+    svg: { color: 'white' },
+    input: { color: 'white' },
+    label: { color: '#b1955a' },
+    marginTop:3,
+    width:"16rem",
+    marginBottom:2,
+    color:'white'
+  }} 
+  inputProps={{ style: { color: "white" } }}
+  id="outlined-basic" label="Message" variant="outlined" placeholder='Your message...'
+  multiline
+  rows={2}
+  onChange={(e)=>handleChange(e,"message")}  value={message}
+/>
+
+<Button onClick={handleSubmit}  variant="contained" type={"submit"} style={{backgroundColor:'#b1955a'}}>Send</Button>
+              
             </form>
         </div>
     );

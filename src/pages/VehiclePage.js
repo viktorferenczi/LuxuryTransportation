@@ -99,6 +99,13 @@ export const VehiclePage = () => {
                         </div>
 
                         <div style={{display:'flex',flexDirection:'column'}}>
+                            <p className={"vehicle-name"}>Prices</p>
+                            <p>Pay/Hour  ${displayedCar.price.pph}/H</p>
+                            <p>Point to Point - Miami to Miami ${displayedCar.price.PTPMiamiToMiami}</p>
+                            <p>Point to Point - Miami to Broward ${displayedCar.price.PTPMiamiToBroward}</p>
+                        </div>
+
+                        <div style={{display:'flex',flexDirection:'column'}}>
                             <p className={"vehicle-name"}>Equipment</p>
                            
                             {listItems}

@@ -73,7 +73,7 @@
     height: 3rem;
     margin-top: 1rem;
     margin-right: 3rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     line-height: 3rem;
     font-weight: 500;
 }
@@ -84,7 +84,7 @@
     width: 14rem;
     height: 3rem;
     margin-right: 3rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     line-height: 3rem;
     font-weight: 500;
 }
@@ -186,7 +186,7 @@
 .background-image {
     background-image: url(https://static.wixstatic.com/media/5574c387a7fb4fa38b99b09526e24008.jpg/v1/fill/w_1908,h_545,al_c,q_85,usm_0.66_1.00_0.01/5574c387a7fb4fa38b99b09526e24008.webp);
     background-size: 100% 100%;
-    filter: sepia(0.5);
+    filter: sepia(0.4);
 }
 
 .service-main-div {
@@ -328,9 +328,6 @@
     box-shadow: none
 }
 
-.main-page-fleet-button-div:hover > .main-page-fleet-button {
-    color: #212529
-}
 
 .fleet-div {
     display: flex;
@@ -467,7 +464,7 @@
 }
 
 .car-mercedes-img {
-    width: 35rem; 
+    width: 30rem; 
     margin-right: 5rem
 }
 
@@ -478,7 +475,7 @@
 }
 
 .car-chevrolet-img {
-    width: 35rem;
+    width: 30rem;
     margin-left: 5rem
 }
 
@@ -592,9 +589,8 @@
     margin-top: 14rem;
     width: 15rem;
     justify-self: center;
-    background: #b1955a;
-    height: 4rem;
-    border-radius: 2rem;
+    height: 3rem;
+    border-radius: 1rem;
     cursor: pointer;
 }
 
