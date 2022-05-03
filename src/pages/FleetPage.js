@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 
 import chevrolet from './../store/img/fleet/chevrolet/chevrolet_small.png';
 import cadillac from './../store/img/fleet/cadillac/cadillac_xts_small.png';
+import cadillac_escalade_limo from './../store/img/fleet/cadillacEscaladeLimo/cadillacEscaladeLimo_small.png';
 import mercedes_basic from './../store/img/fleet/mercedes_basic/mercedes_small.png';
 import mercedes_premium from './../store/img/fleet/mercedes_premium/mercedes_small.png';
+import chrysler300 from './../store/img/fleet/chrysler300/chrysler300_small.png';
+import cadillac_escalade_suv from './../store/img/fleet/cadillacEscaladeSuv/cadillac_escalade_suv_small.webp';
 
 import cars from '../fleet.json';
 import Helmet from "react-helmet";
@@ -13,7 +16,7 @@ import Helmet from "react-helmet";
 export const FleetPage = () => {
 
     let carList = Object.values(cars);
-
+   
     carList.forEach(car => {
 
         let imageTag;
@@ -25,41 +28,59 @@ export const FleetPage = () => {
             case "cadillac":
                 car.imgPath = cadillac;
                 break;
+            case "chrysler300":
+                car.imgPath = chrysler300;
+                break;
+            case "cadillacEscaladeLimo":
+                car.imgPath = cadillac_escalade_limo;
+                break;
             case "mercedes_basic":
                 car.imgPath = mercedes_basic;
                 break;
             case "mercedes_premium":
                 car.imgPath = mercedes_premium;
                 break;
+            case "cadillacEscaladeSuv":
+                car.imgPath = cadillac_escalade_suv;
+                break;
             default:
                 break;
         }
 
-        if (car.id > 1 && car.id < 4) {
-            imageTag = <img style={{ width: '80%', marginBottom: '2.3rem' }} alt={car.name} src={car.imgPath} />
-
+        if (car.id == 1) {
+            imageTag = <img style={{ width: '90%', height:"8rem", marginBottom:'1rem' }} alt={car.name} src={car.imgPath} />
+        } else if (car.id == 2 || car.id == 3) {
+            imageTag = <img style={{ width: '85%', height:"7rem", marginBottom:'2rem' }} alt={car.name} src={car.imgPath} />
         } else if (car.id == 4) {
-            imageTag = <img style={{ width: '80%' }} alt={car.name} src={car.imgPath} />
+            imageTag = <img style={{ width: '86%', height:'9rem' }} alt={car.name} src={car.imgPath} />
+        } else if (car.id == 5) {
+            imageTag = <img style={{ width: '86%', height:'6rem', marginTop:'1rem', marginBottom:'2rem' }} alt={car.name} src={car.imgPath} />
+        } else if (car.id == 6) {
+            imageTag = <img style={{ width: '95%', height:'8rem', marginTop:'1rem' }} alt={car.name} src={car.imgPath} />   
         } else {
-            imageTag = <img style={{ width: '80%', marginBottom: '1.3rem'}} alt={car.name} src={car.imgPath} />
+            imageTag = <img style={{ width: '89%', height:"5rem", marginTop:'2rem', marginBottom:'2rem'}} alt={car.name} src={car.imgPath} />
         }
 
         car.imageTag = imageTag;
-
     });
 
-
-    
     const listItems = carList.map((car) =>
+    
         <div key={car.name} className="car-card">
             <Link
                 to={`/vehicle?id=${car.id}`}
                 state={{ car }}
                 style={{ textDecoration: 'none' }}
-            >            
-                {car.imageTag}
-                <p>{car.name}</p>
-                <p>{car.year} - {car.seats}</p>
+            >  
+                <div>
+                    {car.imageTag}
+                </div>          
+                
+                <div>
+                    <p>{car.name}</p>
+                    <p>{car.year} - {car.seats}</p>
+                </div>
+                
             </Link>
         </div>
     );

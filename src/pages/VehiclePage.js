@@ -4,8 +4,11 @@ import { useLocation } from "react-router";
 
 import chevrolet from './../store/img/fleet/chevrolet/chevrolet_small.png';
 import cadillac from './../store/img/fleet/cadillac/cadillac_xts_small.png';
+import cadillac_escalade_limo from './../store/img/fleet/cadillacEscaladeLimo/cadillacEscaladeLimo_small.png';
 import mercedes_basic from './../store/img/fleet/mercedes_basic/mercedes_small.png';
 import mercedes_premium from './../store/img/fleet/mercedes_premium/mercedes_small.png';
+import chrysler300 from './../store/img/fleet/chrysler300/chrysler300_small.png'
+import cadillac_escalade_suv from './../store/img/fleet/cadillacEscaladeSuv/cadillac_escalade_suv_small.webp'
 
 import fleet from '../fleet.json';
 import { PhotoGallery } from "../components/VehiclePage/PhotoGallery";
@@ -33,11 +36,20 @@ export const VehiclePage = () => {
                 case "cadillac":
                     car.imgPath = cadillac;
                     break;
+                case "chrysler300":
+                    car.imgPath = chrysler300;
+                    break;
+                case "cadillacEscaladeLimo":
+                    car.imgPath = cadillac_escalade_limo;
+                    break;
                 case "mercedes_basic":
                     car.imgPath = mercedes_basic;
                     break;
                 case "mercedes_premium":
                     car.imgPath = mercedes_premium;
+                    break;
+                case 'cadillacEscaladeSuv':
+                    car.imgPath = cadillac_escalade_suv;
                     break;
                 default:
                     break;
@@ -115,7 +127,7 @@ export const VehiclePage = () => {
                     <CardActions style={{justifyContent:'center'}}>
                         
                         {carId != 1 ? <Button onClick={handlePrevButton}  variant="contained" style={{backgroundColor:'#b1955a'}}>Previous vehicle</Button> : <></> }
-                        {carId != 4 ? <Button onClick={handleNextButton}  variant="contained" style={{backgroundColor:'#b1955a'}}>Next vehicle</Button> : <></> }  
+                        {carId != 7 ? <Button onClick={handleNextButton}  variant="contained" style={{backgroundColor:'#b1955a'}}>Next vehicle</Button> : <></> }  
                         
                        
                         <Button onClick={handleBooking}  variant="contained" style={{backgroundColor:'green'}}>Book this vehicle</Button>

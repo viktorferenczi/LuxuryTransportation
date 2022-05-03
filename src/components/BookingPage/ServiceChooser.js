@@ -37,6 +37,7 @@ export const ServiceChooser = (props) => {
     const carId = location.search.split("=")[1];
 
     const [warningText,setWarningText] = useState(false);
+    const [successText,setSuccessText] = useState(false);
    
     const selectServices = [
         { value: 'ptp-miami-to-miami', label: 'Point to Point (Miami to Miami)' },
@@ -45,10 +46,13 @@ export const ServiceChooser = (props) => {
     ];
 
     const selectCars = [
-        { value: 'cs', label: 'Chevrolet Suburban' },
+        { value: 'cs', label: 'Chevrolet Suburban SUV' },
         { value: 'ms', label: 'Mercedes Sprinter' },
         { value: 'mse', label: 'Mercedes Sprinter Executive' },
-        { value: 'lms', label: 'Cadillac XTS' },
+        { value: 'lms', label: 'Cadillac XTS Sedan' },
+        { value: 'lms', label: 'Cadillac Escalade SUV' },
+        { value: 'lms', label: 'Chrysler 300 Stretch Limo' },
+        { value: 'cel', label: 'Cadillac Escalade Stretch Limo' },
     ];
 
     useEffect(() => {
@@ -63,6 +67,8 @@ export const ServiceChooser = (props) => {
 
     const onChangeHandler = (event,type) => {
         setWarningText(false);
+        setSuccessText(false);
+
         switch (type) {
             case 'date':
                 setDate(event);
@@ -104,17 +110,17 @@ export const ServiceChooser = (props) => {
             name:name,
             phone:phone,
             email:email,
-            car:car.label,
-            service:service.label,
-            date:date
+            car: selectCars.find(element => element.value == car).label,
+            service: selectServices.find(element => element.value == service).label,
+            date:date.toString()
         };
-      
         
         init("user_NI2YtL4qPeOue4aib0abR");
 
         emailjs.send('service_nxyq4yu','template_5qzcb4c', templateParams, 'user_NI2YtL4qPeOue4aib0abR')
             .then((response) => {
                setShow(true);
+               setSuccessText(true);
             }, (err) => {
                 alert('We were unable to send your message! Please call us!');
             });
@@ -136,6 +142,7 @@ export const ServiceChooser = (props) => {
             <Card className = "service-chooser-main-div" sx={{backgroundColor:"#37393d", boxShadow:"12px 12px 2px 1px rgba(32, 32, 32, 0.747)"}}>
                 <h2>Service details</h2>
                 {warningText ? <p style={{ color: 'red' }}>Please give us all the informations for the proper booking!</p> : <p>Please choose the date carefully</p>}
+                {successText ? <p style={{ color: 'green' }}>Thank you for your booking! We will contact you as soon as possible on the given phone number!</p> : <p>Our staff will call you after successful booking</p>}
                 <div className = 'service-possibilities-div'>
                     <div className="service-date-chooser">
                         <div>

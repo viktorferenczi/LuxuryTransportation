@@ -1,7 +1,7 @@
 import React, { useState, useCallback , useEffect} from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { chevroletPhotoes, mercedesBasicPhotoes, mercedesExecPhotoes, cadillacPhotoes } from "../VehiclePage/photo";
+import { chevroletPhotoes, mercedesBasicPhotoes, mercedesExecPhotoes, cadillacPhotoes, cadillacEscaladeLimoPhotoes, chrysler300Photoes, cadillacEscaladeSuvPhotoes } from "../VehiclePage/photo";
 
 export const PhotoGallery = (props) => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -34,29 +34,40 @@ export const PhotoGallery = (props) => {
 
   switch (props.displayedCar.id) {
     case 1:
-        //Chevrolet Suburban
-        chosenCarPhotoes = chevroletPhotoes;
-        break;
+      //Chevrolet Suburban
+      chosenCarPhotoes = chevroletPhotoes;
+      break;
     case 2:
-        //Mercedes basic
-        chosenCarPhotoes = mercedesBasicPhotoes;
-        break;
+      //Mercedes basic
+      chosenCarPhotoes = mercedesBasicPhotoes;
+      break;
     case 3:
-        //Mercedes exec basic
-        chosenCarPhotoes = mercedesExecPhotoes;
-        break; 
+      //Mercedes exec basic
+      chosenCarPhotoes = mercedesExecPhotoes;
+      break; 
     case 4:
-        //Cadillac
-        chosenCarPhotoes = cadillacPhotoes;
-        break; 
-      default:
-          break;
+      //Cadillac
+      chosenCarPhotoes = cadillacPhotoes;
+      break;
+    case 5:
+      //Cadillac Escalade SUV
+      chosenCarPhotoes = cadillacEscaladeSuvPhotoes;
+      break; 
+    case 6:
+      //Chrysler 300
+      chosenCarPhotoes = chrysler300Photoes;
+      break; 
+    case 7:
+      //Cadillac Escalade Limo
+      chosenCarPhotoes = cadillacEscaladeLimoPhotoes;
+      break; 
+     
   }
   
   return (
     <div>
-          {window.innerWidth < 1100 ?  // ez a width, itt állítható, hogy mikortól legyen 1 kép csak
-              <img onClick={(event) => openLightbox(event, { photo: 0, index: 0 })} className="main-car-img" src={chosenCarPhotoes[0].src}></img>
+      {window.innerWidth < 1100 ?  // ez a width, itt állítható, hogy mikortól legyen 1 kép csak
+        <img onClick={(event) => openLightbox(event, { photo: 0, index: 0 })} className="main-car-img" src={chosenCarPhotoes[0].src}></img>
       :
         <div style={{width:"50rem"}}> <Gallery photos={chosenCarPhotoes} onClick={openLightbox}/></div>
       }

@@ -120,11 +120,14 @@ export const Services = () => {
                 </div>
 
                 <div style={{marginTop:"3rem"}}>
+                    <div style={{ marginTop: "3rem" }}>
+                        <h1 style={{ color: '#b1955a', fontSize:35 }}>SUVs</h1>
+                    </div>
 
                     <div className="prices-row">
                         <div className="price-div">
                             <div className="prices-inner-div prices-inner-left">
-                                <h3 className="service-name">Chevrolet Suburban</h3>
+                                <h3 className="service-name">Chevrolet Suburban SUV</h3>
                                 <h4 style={{ paddingBottom: '2rem' }}>(seats 1-6)</h4>
                                 <div className="description">
                                     <p>
@@ -142,21 +145,25 @@ export const Services = () => {
 
                         <div className="price-div">
                             <div className="prices-inner-div prices-inner-right">
-                                <h3 className="service-name">Mercedes Sprinter Executive</h3>
-                                <h4 className='mercedes-executive'>(seats 1-13)</h4>
+                                <h3 className="service-name">Cadillac Escalade SUV</h3>
+                                <h4 className='mercedes-executive'>(seats 1-6)</h4>
                                 <div className="description">
                                     <p>
-                                        Point to Point (Miami to Miami) - $195
+                                        Point to Point (Miami to Miami) - $185
                                     </p>
                                     <p>
-                                        Point to Point (Miami to Broward) - $245
+                                        Point to Point (Miami to Broward) - $205
                                     </p>
                                     <p>
-                                        Pay/Hour - $115/h
+                                        Pay/Hour - $105/h (min. 3h)
                                     </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div style={{ marginTop: "3rem" }}>
+                        <h1 style={{ color: '#b1955a', fontSize:35 }}>Sprinters</h1>
                     </div>
                     <div className="prices-row">
                         <div className="price-div">
@@ -179,23 +186,87 @@ export const Services = () => {
 
                         <div className="price-div">
                             <div className="prices-inner-div prices-inner-right">
-                                <h3 className="service-name">Cadillac XTS</h3>
+                                <h3 className="service-name">Mercedes Sprinter Executive</h3>
                                 <h4 style={{ paddingBottom: '2rem' }}>(seats 1-3)</h4>
                                 <div className="description">
                                     <p>
-                                        Point to Point (Miami to Miami) - $135
+                                        Point to Point (Miami to Miami) - $195
                                     </p>
                                     <p>
-                                        Point to Point (Miami to Broward) - $155
+                                        Point to Point (Miami to Broward) - $245
                                     </p>
                                     <p>
-                                        Pay/Hour - $65/h
+                                        Pay/Hour - $115/h
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div style={{ marginTop: "3rem" }}>
+                        <h1 style={{ color: '#b1955a', fontSize:35 }}>Limos</h1>
+                    </div>
+                    <div className="prices-row">
+                        <div className="price-div">
+                            <div className="prices-inner-div prices-inner-left">
+                                <h3 className="service-name">Chrysler 300 Stretch Limo</h3>
+                                <h4 style={{ paddingBottom: '2rem' }}>(seats 1-12)</h4>
+                                <div className="description">
+                                    <p>
+                                        Point to Point (Miami to Miami) - $250
+                                    </p>
+                                    <p>
+                                        Point to Point (Miami to Broward) - $290
+                                    </p>
+                                    <p>
+                                            Pay/Hour - $145/h (min. 5h)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="price-div">
+                            <div className="prices-inner-div prices-inner-right">
+                                <h3 className="service-name">Cadillac Escalade Stretch Limo</h3>
+                                <h4 style={{ paddingBottom: '2rem' }}>(seats 1-22)</h4>
+                                <div className="description">
+                                    <p>
+                                        Point to Point (Miami to Miami) - $290
+                                    </p>
+                                    <p>
+                                        Point to Point (Miami to Broward) - $350
+                                    </p>
+                                    <p>
+                                        Pay/Hour - $185/h (min. 5h)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style={{ marginTop: "3rem" }}>
+                        <h1 style={{ color: '#b1955a', fontSize:35 }}>Sedans</h1>
+                    </div>
+
+                    <div className="prices-inner-div price-div-sedan">
+                        <h3 className="service-name">Cadillac XTS sedan</h3>
+                        <h4 style={{ paddingBottom: '2rem' }}>(seats 1-3)</h4>
+                        <div className="description">
+                            <p>
+                                Point to Point (Miami to Miami) - $135
+                            </p>
+                            <p>
+                                Point to Point (Miami to Broward) - $155
+                            </p>
+                            <p>
+                                Pay/Hour - $65/h
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
+
+                
 
                 <div className="prices-plus-info">
                     <div className="prices-credit-card">

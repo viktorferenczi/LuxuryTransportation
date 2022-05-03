@@ -2,7 +2,7 @@
     "1":
         {
             "id":1,
-            "name":"CHEVROLET SUBURBAN",
+            "name":"CHEVROLET SUBURBAN SUV",
             "year": "2020",
             "price":{
                 "pph":85,
@@ -53,6 +53,48 @@
             },
             "seats": "3 seats",
             "imgPath": "cadillac",
+            "carInfo":"Black interior and exterior-Leather seats-6 speaker audio system-A/C-HD RadioPower outlets-Auxiliary-12V-HDMI connections"
+        },
+        "5":
+        {   
+            "id":5,
+            "name":"CADILLAC ESCALADE SUV",
+            "year": "2022",
+            "price":{
+                "pph":105,
+                "PTPMiamiToMiami":185,
+                "PTPMiamiToBroward":205
+            },
+            "seats": "6 seats",
+            "imgPath": "cadillacEscaladeSuv",
+            "carInfo":"Black interior and exterior-Leather seats-6 speaker audio system-A/C-HD RadioPower outlets-Auxiliary-12V-HDMI connections"
+        },
+        "6":
+        {   
+            "id":6,
+            "name":"CHRYSLER 300 STRETCH LIMO",
+            "year": "2021",
+            "price":{
+                "pph":145,
+                "PTPMiamiToMiami":250,
+                "PTPMiamiToBroward":290
+            },
+            "seats": "12 seats",
+            "imgPath": "chrysler300",
+            "carInfo":"Black interior and exterior-Leather seats-6 speaker audio system-A/C-HD RadioPower outlets-Auxiliary-12V-HDMI connections"
+        },
+        "7":
+        {   
+            "id":7,
+            "name":"CADILLAC ESCALADE STRETCH LIMO",
+            "year": "2019",
+            "price":{
+                "pph":185,
+                "PTPMiamiToMiami":290,
+                "PTPMiamiToBroward":350
+            },
+            "seats": "22 seats",
+            "imgPath": "cadillacEscaladeLimo",
             "carInfo":"Black interior and exterior-Leather seats-6 speaker audio system-A/C-HD RadioPower outlets-Auxiliary-12V-HDMI connections"
         }
 }

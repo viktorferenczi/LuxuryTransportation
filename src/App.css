@@ -273,6 +273,10 @@
     width:70%
 }
 
+.price-div-sedan{
+    width:40%
+}
+
 .prices-row {
     display: inline-flex;
     width: 100%;
@@ -344,7 +348,7 @@
     box-shadow: 12px 12px 2px 1px rgb(32 32 32 / 75%);
     padding: 1rem;
     border-radius: 5px;
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
 }
 
 .hamburger-menu {
@@ -442,7 +446,7 @@
     display: inline-grid; 
     height: 34rem;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
     margin-top: 2rem;
 }
 
@@ -854,6 +858,28 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .prices-row{
+        display: inline-grid;
+        margin-bottom: 0rem;
+    }
+
+    .price-div {
+        width:100%;
+    }
+
+    .price-div-sedan{
+        width:100%;
+    }
+
+    .prices-inner-div {
+        margin-bottom: 2rem;
+        width:80%;
+        height:20rem;
+        padding:4px;
+    }
+}
+
 @media only screen and (max-width: 725px) {
     .car-chooser-div {
         height:21rem;
@@ -900,20 +926,6 @@
 
     .main-page-fleet-button-div {
         margin-top: 8rem;
-    }
-
-    .prices-row{
-        display: inline-grid;
-        margin-bottom: 0rem;
-    }
-
-    .price-div {
-        width:100%;
-    }
-
-    .prices-inner-div {
-        margin-bottom: 2rem;
-        width:60%
     }
 
     .type-main-div {
