@@ -24,6 +24,7 @@ export const ContactPage = () => {
             </div>
 
             <div>
+                <Reviews />
                 <div className="full-wide-contanct">
                     <CompanyInfo />
                     <EmailSender />

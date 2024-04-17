@@ -6,7 +6,6 @@ export const CompanyInfo = () => {
     return (
         <div style={{display:'flex'} }>
             <div>
-                <Reviews />
             </div>
             <div>
                 <img style={{ width: "20%" }} src={logo} />
