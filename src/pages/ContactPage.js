@@ -4,6 +4,7 @@ import { CompanyInfo } from "../components/ContactPage/CompanyInfo";
 import { RidePlanner } from "../components/ContactPage/RidePlanner";
 import { EmailSender } from "../components/ContactPage/EmailSender";
 import { Helmet } from  "react-helmet";
+import { Reviews } from "../components/ContactPage/Reviews";
 
 export const ContactPage = () => {
     return (
@@ -24,10 +25,10 @@ export const ContactPage = () => {
 
             <div>
                 <div className="full-wide-contanct">
-                    <CompanyInfo/>
+                    <CompanyInfo />
                     <EmailSender />
-                   
                 </div>
+
                 <div className="full-wide-planner">
                     <RidePlanner />
                 </div>

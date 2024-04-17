@@ -2,6 +2,9 @@
 import logo from '../../store/img/logo.png'
 
 export const Footer = () => {
+
+    let year = new Date().getFullYear();
+
     return (
         <div className="footer">
 
@@ -20,7 +23,7 @@ export const Footer = () => {
             </div>
            
             <div>
-                <p style={{ color: 'white', marginBottom: "0" }}>© 2022 5 Star Luxury Transportation. All Rights Reserved.</p>
+                <p style={{ color: 'white', marginBottom: "0" }}>© {year} 5 Star Luxury Transportation. All Rights Reserved.</p>
             </div>
             <div>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
